@@ -36,11 +36,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AudioManager.cs" />
-     <Compile Include="Assets\Scripts\Chama_Menu.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Menu.cs" />
-     <Compile Include="Assets\Scripts\ResolucitonManager.cs" />
+     <Compile Include="Assets\Scripts\Inimigo\InimigoGfx.cs" />
+     <Compile Include="Assets\Scripts\Inimigo\InimigosIAs.cs" />
+     <Compile Include="Assets\Scripts\Inimigo\WavesSystens.cs" />
+     <Compile Include="Assets\Scripts\Menu_Systema\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\Menu_Systema\Chama_Menu.cs" />
+     <Compile Include="Assets\Scripts\Menu_Systema\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Menu_Systema\Menu.cs" />
+     <Compile Include="Assets\Scripts\Menu_Systema\ResolucitonManager.cs" />
+     <Compile Include="Assets\Scripts\Movimento_Simples.cs" />
+     <Compile Include="Assets\Scripts\Player\MovimentoSimples.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -223,6 +228,9 @@
     </Reference>
     <Reference Include="UnityEditor">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>C:/Users/PEDRO/Documents/GitHub/FaculGame/Bruxo-Git/Bruxo&amp;Pactos/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -652,6 +660,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{28c6a506-b190-2a5f-ef59-304a98e2f0b7}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{79eedea9-baf0-6142-5025-8b78b6aadfe9}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{4f0cf4e5-5ef0-26c9-4092-4315d75947b2}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
