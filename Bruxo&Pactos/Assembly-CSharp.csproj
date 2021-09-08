@@ -44,8 +44,6 @@
      <Compile Include="Assets\Scripts\Menu_Systema\GameManager.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\Menu.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\ResolucitonManager.cs" />
-     <Compile Include="Assets\Scripts\Menu_Systema\SAve_Game.cs" />
-     <Compile Include="Assets\Scripts\Menu_Systema\Save_System.cs" />
      <Compile Include="Assets\Scripts\Movimento_Simples.cs" />
      <Compile Include="Assets\Scripts\Player\Armas_Dano.cs" />
      <Compile Include="Assets\Scripts\Player\MovimentoSimples.cs" />

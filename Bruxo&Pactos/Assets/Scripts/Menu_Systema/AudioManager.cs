@@ -64,6 +64,7 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    /*
     public void SAve_Game ()
     {
       Save_System.SAve_Game(this);
@@ -74,7 +75,7 @@ public class AudioManager : MonoBehaviour
       SAve_Game data = Save_System.LoadPlayer();
       volumeb = data.volume;
 
-    }
+    }*/
 
     
 
