@@ -39,14 +39,16 @@
      <Compile Include="Assets\Scripts\Inimigo\InimigoGfx.cs" />
      <Compile Include="Assets\Scripts\Inimigo\InimigosIAs.cs" />
      <Compile Include="Assets\Scripts\Inimigo\WavesSystens.cs" />
+     <Compile Include="Assets\Scripts\Itens\Armas.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\Chama_Menu.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\GameManager.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\Menu.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\ResolucitonManager.cs" />
-     <Compile Include="Assets\Scripts\Movimento_Simples.cs" />
      <Compile Include="Assets\Scripts\Player\Armas_Dano.cs" />
+     <Compile Include="Assets\Scripts\Player\Ataque_Player.cs" />
      <Compile Include="Assets\Scripts\Player\MovimentoSimples.cs" />
+     <Compile Include="Assets\Scripts\Player\Movimento_Simples.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
