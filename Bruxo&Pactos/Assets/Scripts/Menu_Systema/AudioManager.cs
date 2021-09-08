@@ -64,6 +64,18 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    public void SAve_Game ()
+    {
+      Save_System.SAve_Game(this);
+    }
+
+    public void LoadPlayer ()
+    {
+      SAve_Game data = Save_System.LoadPlayer();
+      volumeb = data.volume;
+
+    }
+
     
 
     public void SetFaseMusic ()
