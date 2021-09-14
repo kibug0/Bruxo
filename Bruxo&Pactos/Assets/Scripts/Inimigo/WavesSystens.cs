@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WavesSystens : MonoBehaviour
 {
-     #region Variavies
+    #region Variavies
 
     //Enum criado para os estados possiveis da wave spawning = spawnando; wating = esperando; couunting = contando;
     public enum SpawnState{Spawning, wating, couunting}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movimento_Simples : MonoBehaviour
+public class Movimento_Simples: MonoBehaviour
 {
 
     #region Variaveis
@@ -40,22 +40,22 @@ public class Movimento_Simples : MonoBehaviour
         {
             if(movement.x<0 && movement.y<0)
             {
-            Rb.rotation = 135f;
+                Rb.rotation = 135f;
             }
 
             if(movement.x>0 && movement.y>0)
             {
-            Rb.rotation = 315f;
+                Rb.rotation = 315f;
             }
 
             if(movement.x>0 && movement.y<0)
             {
-            Rb.rotation = 225f;
+                Rb.rotation = 225f;
             }
 
             if(movement.x<0 && movement.y>0)
             {
-            Rb.rotation = 45f;
+                Rb.rotation = 45f;
             }
 
         }
@@ -99,8 +99,19 @@ public class Movimento_Simples : MonoBehaviour
     void FixedUpdate()
     {
         //movimentações
-        Rb.MovePosition(Rb.position + movement * MoveSpeed * Time.fixedDeltaTime);
+        if(movement.x!=0 && movement.y!=0)
+        {
+            Rb.MovePosition(Rb.position + (movement * MoveSpeed * Time.fixedDeltaTime)/2);
+
+        }
+        else
+        {
+            Rb.MovePosition(Rb.position + movement * MoveSpeed * Time.fixedDeltaTime);
+        }
+        
+        
+        
 
     }
-    #endregion}
+    #endregion
 }
