@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 sceneSetups: []
+=======
+sceneSetups:
+- path: Assets/Scenes/astral test.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+>>>>>>> c410c6729e58a11c7ce2b742f9fcf6a6f9b9344c
