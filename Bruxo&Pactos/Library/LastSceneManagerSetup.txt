@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/astral test.unity
-=======
-- path: Assets/Scenes/Casa.unity
->>>>>>> 1cc754e1f4525ba6969bb2aed4ccaa1ad36f0471
   isLoaded: 1
   isActive: 1
   isSubScene: 0
