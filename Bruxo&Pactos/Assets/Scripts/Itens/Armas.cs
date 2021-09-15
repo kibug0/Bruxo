@@ -20,7 +20,7 @@ public class Armas : MonoBehaviour
         public int Dano;
     }
 
-    public inimigo[] weapons;
+    public weapons[] weapon;
 
 
     // Start is called before the first frame update
