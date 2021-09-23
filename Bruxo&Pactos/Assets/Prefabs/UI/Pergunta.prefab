@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 7824240560478326662}
   m_Layer: 5
   m_Name: Pergunta
-  m_TagString: Untagged
+  m_TagString: Pergunta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,8 +312,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -12.599976, y: 27.299988}
-  m_SizeDelta: {x: -848.83875, y: -458.037}
+  m_AnchoredPosition: {x: -0.9425659, y: 0.44944763}
+  m_SizeDelta: {x: -1.8850708, y: 0.89889526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7824240560478326657
 CanvasRenderer:
