@@ -42,14 +42,14 @@
      <Compile Include="Assets\Scripts\Inimigo\WavesSystens.cs" />
      <Compile Include="Assets\Scripts\Itens\Armas.cs" />
      <Compile Include="Assets\Scripts\Itens\CaixaDeItens.cs" />
-     <Compile Include="Assets\Scripts\Itens\NPC\Chamado.cs" />
-     <Compile Include="Assets\Scripts\Itens\NPC\Criatura.cs" />
-     <Compile Include="Assets\Scripts\Itens\NPC\Pacto.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\Chama_Menu.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\GameManager.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\Menu.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\ResolucitonManager.cs" />
+     <Compile Include="Assets\Scripts\NPC\Chamado.cs" />
+     <Compile Include="Assets\Scripts\NPC\Criatura.cs" />
+     <Compile Include="Assets\Scripts\NPC\Pacto.cs" />
      <Compile Include="Assets\Scripts\Player\Armas_Dano.cs" />
      <Compile Include="Assets\Scripts\Player\Ataque_Player.cs" />
      <Compile Include="Assets\Scripts\Player\MovimentoSimples.cs" />
