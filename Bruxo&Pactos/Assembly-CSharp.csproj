@@ -54,6 +54,8 @@
      <Compile Include="Assets\Scripts\Player\Ataque_Player.cs" />
      <Compile Include="Assets\Scripts\Player\MovimentoSimples.cs" />
      <Compile Include="Assets\Scripts\Player\Movimento_Simples.cs" />
+     <Compile Include="Assets\Scripts\Status.cs" />
+     <Compile Include="Assets\Scripts\Vida.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
