@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class Vida : MonoBehaviour
 {
-    int vida;
+    public int vida;
+    public int dano;
 }

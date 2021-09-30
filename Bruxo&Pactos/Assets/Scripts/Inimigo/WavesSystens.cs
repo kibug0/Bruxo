@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class WavesSystens : MonoBehaviour
 {
+    #region classe de outros scripts
+    public Fasecameracontroler Fcc;
+
+    #endregion
+
     #region Variavies
 
     //Enum criado para os estados possiveis da wave spawning = spawnando; wating = esperando; couunting = contando;
-    public enum SpawnState{Spawning, wating, couunting}
+    public enum SpawnState{desligado, Spawning, wating, couunting, finalizado}
+    
     
 
     //Classe que eu criei para cada inimigo que pode aparecer numa wave
@@ -71,7 +77,9 @@ public class WavesSystens : MonoBehaviour
     private float searchCountdown = 1f;
 
     // aki eu ativo o enum para ir alterando ela pelos os paremetros feitos a cima no enum
-    public SpawnState state = SpawnState.couunting;
+    public SpawnState state = SpawnState.desligado;
+
+    
     #endregion
 
     #region Start
@@ -89,45 +97,51 @@ public class WavesSystens : MonoBehaviour
 
     #region update
     void Update()
-    {
+    {  
+        if(state != SpawnState.desligado)
         
-        //Enquanto tiver inimigos vivo ele não fara os ifs a baixo
-        if(state == SpawnState.wating)
-        {
-            //Checa caso os inimigos ainda estão vivos
-            if(!EnemyIsAlive())//EnemyIsAlive()==false
+        {   
+            //Enquanto tiver inimigos vivo ele não fara os ifs a baixo
+            if(state == SpawnState.wating)
             {
-                //Começa uma nova rodada
-                Wavecompleted();
-                
+                //Checa caso os inimigos ainda estão vivos
+                if(!EnemyIsAlive())//EnemyIsAlive()==false
+                {
+                    //Começa uma nova rodada
+                    Wavecompleted();
+                    
+                }
+                else
+                {
+                    return;
+                }
+
+            }
+
+            //Se o tempo for menor ou igual a 0
+            if(wavecountdown <= 0)
+            {
+                //Se o estado não estiver em estado de spawnando ele ativa a corrotina
+                if(state != SpawnState.Spawning)
+                {
+                    //Começa a Spawnar as waves
+
+                    StartCoroutine(SpawnWave(wave[nextwave]));
+
+                }
+            
+            
             }
             else
             {
-                return;
+                //Se o tempo for maior que 0 ele vai tirando de 1 em 1 segundo ate dar 0
+                wavecountdown -= Time.deltaTime;
             }
-
-        }
-
-        //Se o tempo for menor ou igual a 0
-        if(wavecountdown <= 0)
-        {
-            //Se o estado não estiver em estado de spawnando ele ativa a corrotina
-            if(state != SpawnState.Spawning)
-            {
-                //Começa a Spawnar as waves
-
-                StartCoroutine(SpawnWave(wave[nextwave]));
-
-            }
-           
-         
         }
         else
         {
-             //Se o tempo for maior que 0 ele vai tirando de 1 em 1 segundo ate dar 0
-            wavecountdown -= Time.deltaTime;
+            return;
         }
-        
         
     }
     #endregion
@@ -146,7 +160,9 @@ public class WavesSystens : MonoBehaviour
 
         if(nextwave + 1 > wave.Length - 1)
         {
-            nextwave = 0;
+            Fcc.TodosSeForam();
+            //nextwave = 0;
+            state = SpawnState.finalizado;
             Debug.Log("completou todas as waves. Looping...");
 
         }
@@ -172,6 +188,8 @@ public class WavesSystens : MonoBehaviour
             // ve so o a quantidade de game objects com a tag Inimigo
            if(GameObject.FindGameObjectsWithTag("Inimigo").Length == 0)//GameObject.FindGameObjectsWithTag("Inimigo") == null: aki ele faria um loop obrigatorio para encontrar o objeto com essa tag
            {
+               //Fim da wave
+            state = SpawnState.desligado;
             return false;
 
            }
@@ -329,5 +347,14 @@ public class WavesSystens : MonoBehaviour
         Instantiate(_Enemy, _Sp.position, _Sp.rotation);
         
     }
+
+    public void começar()
+    {
+        state = SpawnState.couunting;
+
+    }
+
+
+    
     #endregion
 }
