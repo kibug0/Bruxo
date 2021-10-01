@@ -11,6 +11,7 @@ TagManager:
   - Menu
   - Pergunta
   - Gamemanager
+  - Inimigo
   layers:
   - Default
   - TransparentFX
