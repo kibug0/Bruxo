@@ -5,11 +5,11 @@ using Pathfinding;
 
 public class InimigosIAs : MonoBehaviour
 {
+    GameObject Player;
     public Transform target;
 
     public float speed = 200;
 
-    public float jumpforce = 200;
 
     [SerializeField]
     private Vector2 Direção;
@@ -33,6 +33,13 @@ public class InimigosIAs : MonoBehaviour
         seeker = GetComponent<Seeker>();
 
         InvokeRepeating("UpdatePath", 0f, 0.5f);
+        if(target == null)
+        {
+            Player = GameObject.FindGameObjectWithTag("Player");
+            target = Player.GetComponent<Transform>();
+
+        }
+        
 
         
 
@@ -76,9 +83,11 @@ public class InimigosIAs : MonoBehaviour
 
         Vector2 direcao = ((Vector2)caminho.vectorPath[currentWayPoint] - Rg.position).normalized;
         Vector2 Force = direcao * speed * Time.deltaTime;
-        Vector2 Forcex = new Vector2(1,0) * speed * Time.deltaTime;
+        
 
         Direção = direcao;
+
+        Rg.AddForce(Force);
 
         
         
@@ -93,12 +102,12 @@ public class InimigosIAs : MonoBehaviour
         if(Force.x >= 0.01f)
         {
             EnimieGfx.localScale = new Vector3(-1f, 1f, 1f);
-            Rg.AddForce(Forcex);
+            
         }
         else if(Force.x <= -0.01f)
         {
             EnimieGfx.localScale = new Vector3(1f, 1f, 1f);
-            Rg.AddForce(-Forcex);
+            
         }
 
         

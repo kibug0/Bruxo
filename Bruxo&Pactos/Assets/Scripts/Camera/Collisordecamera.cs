@@ -8,7 +8,7 @@ public class Collisordecamera : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("foi");
+        
         if(collision.GetComponent<CinemachineVirtualCamera>() is  CinemachineVirtualCamera cam)
         {
             Debug.Log("player entrou na area" + collision.gameObject.name);
