@@ -52,6 +52,7 @@ MonoBehaviour:
   "Dire\xE7\xE3o": {x: 0, y: 0}
   nextWayPointDistanci: 1
   EnimieGfx: {fileID: 1107478762241203285}
+  CameTroca: {fileID: 0}
 --- !u!114 &8663763213536676936
 MonoBehaviour:
   m_ObjectHideFlags: 0

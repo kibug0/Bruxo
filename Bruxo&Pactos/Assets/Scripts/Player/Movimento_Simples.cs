@@ -19,6 +19,9 @@ public class MovimentoSimples : MonoBehaviour
     //Vetor para mover o rigidbody do player
     Vector2 movement;
 
+    //O script de trocar a camera
+    public CameraTroca CameTroca; 
+
     #endregion
 
    #region Update
@@ -103,9 +106,48 @@ public class MovimentoSimples : MonoBehaviour
     //FixedUpDate
     void FixedUpdate()
     {
+        if(CameTroca.Status.Equals(CameraTroca.StatusCamera.Parada))
+        {
+            Areadacamera();
+        }
+
         //movimentações
         Rb.MovePosition(Rb.position + movement * MoveSpeed * Time.fixedDeltaTime);
 
     }
-    #endregion}
+    #endregion
+
+    #region Contermove
+
+    private void Areadacamera()
+    {
+        //Altura da camera
+        float altura = 2 * CameTroca.CameraAtual.m_Lens.OrthographicSize;
+
+        //Largura da camera
+        float largura = altura * CameTroca.CameraAtual.m_Lens.Aspect;
+
+        //Limite da camera no eixo x
+        float limitex = Mathf.Abs(largura / 2 - transform.localScale.x / 2);
+
+        //Limite da camera no eixo y
+        float limitey = Mathf.Abs(altura / 2 - transform.localScale.y / 2);
+        
+        //Os dois lados no limite no eixo x esquerda/direita
+        Vector2 limitesx = new Vector2(CameTroca.CameraAtual.transform.position.x - limitex, CameTroca.CameraAtual.transform.position.x + limitex);
+
+        //Os dois lados no limite no eixo y cima/baixo
+        Vector2 limitesy = new Vector2(CameTroca.CameraAtual.transform.position.y - limitey, CameTroca.CameraAtual.transform.position.y + limitey);
+      
+        
+        float clampedx = Mathf.Clamp(transform.position.x, limitesx.x, limitesx.y);
+
+        float clampedy = Mathf.Clamp(transform.position.y, limitesy.x, limitesy.y);
+
+
+        transform.position = new Vector3(clampedx, clampedy, transform.position.z);
+    }
+
+    #endregion
 }
+

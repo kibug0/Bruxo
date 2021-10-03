@@ -29,7 +29,7 @@ public class CameraTroca : MonoBehaviour
     {
         get
         {
-            //Para alterar os status
+            //Para retornar o status
             return status;
         }
     }
@@ -38,7 +38,7 @@ public class CameraTroca : MonoBehaviour
     {
         get
         {
-            //para alterar a camera atual
+            //para retornar a camera atual
             return cameraAtual;
         }
     }
