@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Atacando.cs" />
+     <Compile Include="Assets\Scripts\COLLIDERMenu.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraTroca.cs" />
      <Compile Include="Assets\Scripts\Camera\Collisordecamera.cs" />
      <Compile Include="Assets\Scripts\Camera\Fasecameracontroler.cs" />
@@ -55,8 +56,8 @@
      <Compile Include="Assets\Scripts\NPC\Pacto.cs" />
      <Compile Include="Assets\Scripts\Player\Armas_Dano.cs" />
      <Compile Include="Assets\Scripts\Player\Ataque_Player.cs" />
-     <Compile Include="Assets\Scripts\Player\MovimentoSimples.cs" />
-     <Compile Include="Assets\Scripts\Player\Movimento_Simples.cs" />
+     <Compile Include="Assets\Scripts\Player\Movimento.cs" />
+     <Compile Include="Assets\Scripts\SceneP.cs" />
      <Compile Include="Assets\Scripts\Status.cs" />
      <Compile Include="Assets\Scripts\testscript.cs" />
     <Reference Include="UnityEngine">

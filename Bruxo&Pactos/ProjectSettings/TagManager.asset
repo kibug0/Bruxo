@@ -12,6 +12,7 @@ TagManager:
   - Pergunta
   - Gamemanager
   - Inimigo
+  - MFases
   layers:
   - Default
   - TransparentFX

@@ -11,11 +11,19 @@ public class Chama_Menu : MonoBehaviour
 
     //Canvas para colocar o menu dentro
     public GameObject Canvas;
+
+    //String da tag
+    public string Tag;
     
     // Start is called before the first frame update
     void Start()
     {
         Canvas = GameObject.FindWithTag("Canvas");
+        if(Tag == null)
+        {
+            Tag = "Menu";
+        }
+        
 
 
         
@@ -29,19 +37,23 @@ public class Chama_Menu : MonoBehaviour
             Canvas = GameObject.FindWithTag("Canvas");
 
         }
-        if (Input.GetKeyDown("escape")) 
+        if(tag == "Menu")
         {
-           ColocaMenu();
+            if (Input.GetKeyDown("escape")) 
+            {
+            ColocaMenu();
+            }
         }
+        
 
         
     }
 
     public void ColocaMenu()
     {
-        if(GameObject.FindWithTag("Menu"))
+        if(GameObject.FindWithTag(Tag))
         { 
-            Destroy(GameObject.FindWithTag("Menu"));
+            Destroy(GameObject.FindWithTag(Tag));
             Resume();
             
         }
