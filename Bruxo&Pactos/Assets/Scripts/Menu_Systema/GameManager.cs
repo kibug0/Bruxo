@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     #region informações do decorrer do jogo
         public int vida;
 
+        public int Dano;
+
         public int Nivelplayer;
 
         public int NivelInimigos;
@@ -34,9 +36,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    public void proximacena()
+    public void proximacena(string cena)
     {
-        SceneManager.LoadScene("Casa");
+        SceneManager.LoadScene(cena);
 
     }
 

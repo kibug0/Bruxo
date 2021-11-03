@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5790136571632582087}
   - component: {fileID: 6957724309207914567}
+  - component: {fileID: 8259620233214756756}
   m_Layer: 0
   m_Name: Inventario
   m_TagString: Untagged
@@ -47,6 +48,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PactoA: 
   Arma: 
+--- !u!114 &8259620233214756756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135468310967748730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85ed634c6cce7f4ba774148b4e05806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Vida: 0
+  dano: 0
+  vida: 0
 --- !u!1 &4547957333231446620
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4547957334256909618}
   - component: {fileID: 4547957334256909621}
+  - component: {fileID: 4378715576651731209}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -298,6 +315,21 @@ MonoBehaviour:
   NivelInimigos: 0
   NivelContrato: 0
   FASE: 
+--- !u!114 &4378715576651731209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4547957334256909619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 418b5c7c7443a1a40a535707308fd1d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 2728082014590659138, guid: 930ef3e1de92b4443befae459020f2f6, type: 3}
+  Canvas: {fileID: 0}
+  Tag: 
 --- !u!1 &4617928622874093379
 GameObject:
   m_ObjectHideFlags: 0

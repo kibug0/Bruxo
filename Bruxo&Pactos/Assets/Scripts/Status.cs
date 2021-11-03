@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vida : MonoBehaviour
+public class Status : MonoBehaviour
 {
-    public int vida;
+    public int Vida;
     public int dano;
+    
+    
 }

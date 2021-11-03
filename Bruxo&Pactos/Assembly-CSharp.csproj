@@ -41,7 +41,10 @@
      <Compile Include="Assets\Scripts\Camera\CameraTroca.cs" />
      <Compile Include="Assets\Scripts\Camera\Collisordecamera.cs" />
      <Compile Include="Assets\Scripts\Camera\Fasecameracontroler.cs" />
+     <Compile Include="Assets\Scripts\DestroyGO.cs" />
+     <Compile Include="Assets\Scripts\Inimigo\InimicoCount.cs" />
      <Compile Include="Assets\Scripts\Inimigo\InimigoGfx.cs" />
+     <Compile Include="Assets\Scripts\Inimigo\InimigoStats.cs" />
      <Compile Include="Assets\Scripts\Inimigo\InimigosIAs.cs" />
      <Compile Include="Assets\Scripts\Inimigo\WavesSystens.cs" />
      <Compile Include="Assets\Scripts\Itens\Armas.cs" />

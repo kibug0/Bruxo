@@ -4,15 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Listqual
-  - Listresu
-  - Volume
+  - Inimigo
   - Canvas
   - Menu
-  - Pergunta
-  - Gamemanager
-  - Inimigo
+  - Listqual
+  - Volume
+  - Listresu
   - MFases
+  - FechaButton
+  - Options
+  - arma
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - UI
   - 
   - 
-  - Obstaculo
+  - 
   - 
   - 
   - 

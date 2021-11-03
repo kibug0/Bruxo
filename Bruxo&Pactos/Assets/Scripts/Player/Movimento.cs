@@ -34,8 +34,7 @@ public class Movimento : MonoBehaviour
         //Movimenta pelas setas na Vertical
         movement.y = Input.GetAxisRaw("Vertical");
 
-        Debug.Log(movement.x);
-        Debug.Log(movement.y);
+        
 
         if(Andar != null)
         {
@@ -43,7 +42,7 @@ public class Movimento : MonoBehaviour
 
             Andar.SetFloat("Vertical", movement.y);
 
-            Andar.SetFloat("Speed", movement.sqrMagnitude);
+            
         }
         
 
@@ -119,7 +118,9 @@ public class Movimento : MonoBehaviour
         }
 
         //movimentações
-        Rb.MovePosition(Rb.position + movement * MoveSpeed * Time.fixedDeltaTime);
+        Vector2 direcao = (movement).normalized * MoveSpeed * Time.fixedDeltaTime;
+        Rb.velocity = new Vector2(direcao.x, direcao.y);
+        //Rb.MovePosition(Rb.position + movement * MoveSpeed * Time.fixedDeltaTime);
 
         
         

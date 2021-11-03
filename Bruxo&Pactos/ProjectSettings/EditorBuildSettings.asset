@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/CasaVeio.unity
+    guid: 7bdcf2dd40a0e2043be59b609ba33405
+  - enabled: 1
+    path: Assets/Scenes/esgoto.unity
+    guid: ae9c3ffb1b1999f4d9bc82bbe624472c
   m_configObjects: {}

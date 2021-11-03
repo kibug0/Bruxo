@@ -202,7 +202,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 158343048}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4547957332344933706}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &158343048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,7 +736,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 871211444}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1318470137}
+        m_MethodName: ColocaMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &871211444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,13 +869,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1913548924}
         m_MethodName: proximacena
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: CasaVeio
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1015272368
@@ -904,6 +926,7 @@ GameObject:
   - component: {fileID: 1318470134}
   - component: {fileID: 1318470136}
   - component: {fileID: 1318470135}
+  - component: {fileID: 1318470137}
   m_Layer: 5
   m_Name: Tela_nicial
   m_TagString: Untagged
@@ -970,6 +993,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318470133}
   m_CullTransparentMesh: 0
+--- !u!114 &1318470137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318470133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 418b5c7c7443a1a40a535707308fd1d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 8549887078551489646, guid: 9ed99e029f35ae94ca1af51ed4a58e5b, type: 3}
+  Canvas: {fileID: 0}
+  Tag: Options
 --- !u!114 &1913548924 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4547957334256909621, guid: f62a625795366ef4a900b87fe1e59e6e,
@@ -1127,6 +1165,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gamemanager
       objectReference: {fileID: 0}
+    - target: {fileID: 4547957334256909619, guid: f62a625795366ef4a900b87fe1e59e6e,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259620233214756756, guid: f62a625795366ef4a900b87fe1e59e6e,
+        type: 3}
+      propertyPath: Vida
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8259620233214756756, guid: f62a625795366ef4a900b87fe1e59e6e,
+        type: 3}
+      propertyPath: dano
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f62a625795366ef4a900b87fe1e59e6e, type: 3}
 --- !u!1 &4547957332344933706 stripped
@@ -1135,17 +1188,3 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4547957332344933705}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4547957332344933707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4547957332344933706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 418b5c7c7443a1a40a535707308fd1d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Menu: {fileID: 2728082014590659138, guid: 930ef3e1de92b4443befae459020f2f6, type: 3}
-  Canvas: {fileID: 0}

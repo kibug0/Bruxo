@@ -10,9 +10,10 @@ public class InimigosIAs : MonoBehaviour
 
     public float speed = 200;
 
+    public bool Wave = false;
 
-    [SerializeField]
-    private Vector2 Direção;
+
+    public Vector2 Direção;
 
     public float nextWayPointDistanci = 3f;
 
@@ -94,15 +95,22 @@ public class InimigosIAs : MonoBehaviour
         Vector2 direcao = ((Vector2)caminho.vectorPath[currentWayPoint] - Rg.position).normalized;
         Vector2 Force = direcao * speed * Time.deltaTime;
 
+        
+
         Direção = direcao;
 
-        if(CameTroca.Status.Equals(CameraTroca.StatusCamera.Parada))
+        if(Wave)
         {
-            Areadacamera();
+            if(CameTroca.Status.Equals(CameraTroca.StatusCamera.Parada))
+            {
+                Areadacamera();
+            }
+
         }
+        
 
 
-        Rg.AddForce(Force);
+        Rg.velocity = new Vector2(Force.x, Force.y);
 
         
         

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Chama_Menu : MonoBehaviour
 {
@@ -43,6 +44,12 @@ public class Chama_Menu : MonoBehaviour
             {
             ColocaMenu();
             }
+        }
+        if(GameObject.FindGameObjectWithTag("FechaButton"))
+        {
+            GameObject.FindGameObjectWithTag("FechaButton").GetComponent<Button>().onClick.AddListener(delegate() {ColocaMenu();});
+            Debug.Log("FechaButton");
+
         }
         
 
