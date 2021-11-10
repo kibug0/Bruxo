@@ -46,7 +46,7 @@ public class InimicoCount : MonoBehaviour
 
             if(escolhas == tipo.Porta)
             {
-                saida.GetComponent<Collider2D>().enabled = false;
+                saida.GetComponent<Collider2D>().enabled = true;
 
             }
 
@@ -63,7 +63,7 @@ public class InimicoCount : MonoBehaviour
             
             if(escolhas == tipo.Porta)
             {
-                saida.GetComponent<Collider2D>().enabled = true;
+                saida.GetComponent<Collider2D>().enabled = false;
 
             }
             

@@ -38,6 +38,11 @@ public class Movimento : MonoBehaviour
 
         if(Andar != null)
         {
+            if(movement.x == movement.y)
+            {
+                movement.y = 0;
+
+            }
             Andar.SetFloat("Horizontal", movement.x);
 
             Andar.SetFloat("Vertical", movement.y);

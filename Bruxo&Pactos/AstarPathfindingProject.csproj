@@ -72,6 +72,7 @@
      <Compile Include="Assets\AstarPathfindingProject\Core\Misc\AnimationLink.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Core\Misc\ArrayPool.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Core\Misc\AstarDebugger.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\Core\Misc\AutoRepathPolicy.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Core\Misc\BinaryHeap.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Core\Misc\Draw.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Core\Misc\EditorResourceHelper.cs" />
@@ -112,6 +113,7 @@
      <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAI.cs" />
      <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAnimation.cs" />
      <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\ObjectPlacer.cs" />
+     <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\SnapToNode.cs" />
      <Compile Include="Assets\AstarPathfindingProject\ExampleScenes\ExampleScripts\TargetMover.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Generators\Base.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Generators\GridGenerator.cs" />
@@ -364,14 +366,8 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.WebGL.Extensions">
- <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>C:/Users/PEDRO/Documents/GitHub/FaculGame/Bruxo/Bruxo&amp;Pactos/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>C:/Users/CONSTERRA/Documents/GitHub/Bruxo/Bruxo&amp;Pactos/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -719,10 +715,10 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/PEDRO/Documents/GitHub/FaculGame/Bruxo/Bruxo&amp;Pactos/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/CONSTERRA/Documents/GitHub/Bruxo/Bruxo&amp;Pactos/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/PEDRO/Documents/GitHub/FaculGame/Bruxo/Bruxo&amp;Pactos/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/CONSTERRA/Documents/GitHub/Bruxo/Bruxo&amp;Pactos/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

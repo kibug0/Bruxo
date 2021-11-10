@@ -28,6 +28,8 @@ public class InimigosIAs : MonoBehaviour
     Seeker seeker;
     Rigidbody2D Rg;
 
+    public Animator Andar;
+
     //O script de trocar a camera
     public CameraTroca CameTroca; 
 
@@ -94,6 +96,24 @@ public class InimigosIAs : MonoBehaviour
 
         Vector2 direcao = ((Vector2)caminho.vectorPath[currentWayPoint] - Rg.position).normalized;
         Vector2 Force = direcao * speed * Time.deltaTime;
+
+        if(Andar != null)
+        {
+            Debug.Log(direcao);
+            
+            if(direcao.x > direcao.y)
+            {
+                Andar.SetFloat("horizontal", direcao.x);
+
+            }
+
+            else
+            {
+                Andar.SetFloat("vertical", direcao.y);
+
+            }
+            
+        }
 
         
 
