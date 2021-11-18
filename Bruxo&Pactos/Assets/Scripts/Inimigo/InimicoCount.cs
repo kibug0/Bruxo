@@ -8,6 +8,8 @@ public class InimicoCount : MonoBehaviour
 
     public enum tipo {Porta, saida, Mudfase}
 
+    public bool ativador; 
+
     public string cena;
 
     private SceneP Cenap;
@@ -78,5 +80,20 @@ public class InimicoCount : MonoBehaviour
             
         }
         
+    }
+
+     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(ativador)
+        {
+            for(int i = 0; i <(int) gameObject.transform.childCount; i++)
+            {
+                gameObject.transform.GetChild(i).gameObject.SetActive(true);
+
+            }
+            
+
+        }
+
     }
 }

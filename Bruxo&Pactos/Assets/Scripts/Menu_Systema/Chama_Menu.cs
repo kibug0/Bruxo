@@ -19,7 +19,12 @@ public class Chama_Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Canvas = GameObject.FindWithTag("Canvas");
+        if(GameObject.FindWithTag("Canvas"))
+        {
+            Canvas = GameObject.FindWithTag("Canvas");
+
+        }
+        
         if(Tag == null)
         {
             Tag = "Menu";

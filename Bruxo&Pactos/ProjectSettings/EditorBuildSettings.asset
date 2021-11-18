@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Sot\xE3oVeio.unity"
     guid: 7cf341289a42c6741abf8a6f69b960c0
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: fbe2af555b5f44e499d9643618ee0f86
   m_configObjects: {}

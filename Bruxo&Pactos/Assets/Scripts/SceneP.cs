@@ -7,6 +7,7 @@ public class SceneP : MonoBehaviour
 {
     public string Scena;
     private bool coli = false;
+    private GameManager Gm;
     
 
     void Update()
@@ -23,6 +24,12 @@ public class SceneP : MonoBehaviour
             
         }
 
+        if(GameObject.FindWithTag("GameController"))
+        {
+            Gm = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
+
+        }
+
 
     }
     
@@ -33,6 +40,24 @@ public class SceneP : MonoBehaviour
         
 
     }
+
+
+    public void Respawn()
+    {
+        if(GameObject.FindWithTag("GameController"))
+        {
+            SceneManager.LoadScene(Gm.FASE);
+
+        }
+        else
+        {
+            SceneManager.LoadScene("Inicio");
+        }
+        
+        
+
+    }
+
     private void OnTriggerEnter2D(Collider2D player)
     {
         if(player.CompareTag("Player"))

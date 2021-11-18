@@ -341,9 +341,8 @@ GameObject:
   m_Component:
   - component: {fileID: 61281286}
   - component: {fileID: 61281287}
-  - component: {fileID: 61281289}
   m_Layer: 0
-  m_Name: inimigos Fase
+  m_Name: inimigos area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -360,10 +359,9 @@ Transform:
   m_LocalPosition: {x: 10.77, y: -15.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1023649145}
-  - {fileID: 690277887}
-  - {fileID: 485128102}
-  - {fileID: 481640000}
+  - {fileID: 160052262}
+  - {fileID: 820318271}
+  - {fileID: 682504695}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -381,7 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACwn+sn2vJ0VgIAAPYEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty4jAQ/BVK5yVlOyEhe9t1CNlDHhWylYsvwhpjFbLk0iNAUvz7jmQZO+wJMd0z6p4Z+YtwaVoordJLzdmjYkB+Tog/kx+TAXyAPd0oueKf0HPeObO1J9HAeaWWK4ynPs2oBqzm5S+5EZ6cYNBJXindLNgGcmWswXBFhQGEtLI+W2Loa0L2+DO99SkHPGU3/vSJp9tkcsRjCdKCHqhpGpnTdHYxi9yO6mQpaNMC87pHGVcx4zawJBqKBF+qVEJwE9UQe2iD25y2xqEXJDBO0V2Q4Pk18E1tvdJx8nNVGbDRuqaHO66xSV1V8lt1nWuo2XayPqhw/p5sdh00dUUf/8OnaYArrZqH/t408XfYmpfbV3ooqbGj1o7Dd9+FO7mjYkvXAt5rkE9qqZWTDEGrnU91BrK74e/JWl5DuR3indSzoGuHdveT7OfoPRyD+30ueLP20MVVF1gJFfodxg8aJ/MHBYflMLEERr2Kvwbe6Ga8RRG459pYhKJL6eWtldOeShahZ96Ns7nSEkI4im5BUmEPL1jGno/wDBtde4bcU/9e4uUR65/BWUoID/wkOYNe1O40LFOr3SOY+tlZwSUMoj3whH3KlZTdho170qetnK5oOUrbOM6+rxap2NX8umLzjLGkvMyyabIGmMHl5Xyd3lTZfEbC7nGJPql46YTG9uDU5FBc4p71n5HJUtM2bDvTdLfkn40atZzLSq1KDSCfuwon4aDxEnyVbME4NmgF1nIZ5k2+CiJUuQVWnAoVwelibzUthioFafmHsj5SkDx8NwpyJMd/UEsDBBQAAAgIAACwn+uaBnjSbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrRSWoqJhVlaioVRSopBsrGRka5BUmqqaaqxsUWSoXmakYWpUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACwn+sn2vJ0VgIAAPYEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACwn+uaBnjSbQAAAHgAAAAJACQAAAAAAAAAAAAAAKMCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAWwMAAAAA
+    dataString: UEsDBBQAAAgIAACwn+uXbvIyawIAAB8FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMly4jAQ/RVK5yFlGwhkbjMOIXNIQoVM5eKLsNpYhSy5tARIin+flmxjhznRvNfL60X+IlyaGnKr9Epz9qQYkJ8j4m3yY9STj3CkOyU3/BM6n3fObOmdaPB5pZYrxGMfZlQFVvP8l9wJ7xwh6CQvlK6WbAepMtYgXFBhACmtrI+WCH2NyBF/xnc+5IRWMvfWJ1p30eiMZg7Sgu5dp9HNvPUdx/HNdBpFUTxrY5oQJ3NBqxqY199HzpM2bjIPbhI7az18F7kSgptWFrGnOrSd0to4bAodGKfYZtDi/Uvgu9J6ycPgl6IwYNsZaHq65xqn1WQlv1UzwoqafaPrgwrn6ySz26CpSfr0Hz+OA11oVT12dePI17Alz/ev9JRTYwczHsL334U7eaBiT7cC3kuQz2qllZMMSaudD3UGkvv+76W1tIR83+ON1CvQ1f28u5V2C/U9nEP3x1Twauupm2kDbIQK8w53ABo38wcFhysxbQpEvYq/Bt7obnhOLfHAtbFItV1KL2+rnPauZBlm5rtxNlVaQoBb0TVIKuxpjWns9QqvuEHZK+aB+ofTFm+57j1chQS494+iK2qtDpdlmVIdnsCUL84KLqEX7YlnnFOqpGwubDiTLmzjdEHzQdjOcfb9tEjBpovbgi0SxqJ8kiTjaAswg8lksY3nRbKYkXB7XGKfVKwboe14cGuyTy7xzrrvyWilaR2unWl6WPHPSg1GzmWhNrkGkC9Nhotw0FgEXyVbMo4D2oC1XIZ9k6+MCJXvgWWXRFnodHm0mmZ9lozU/ENZj2QkDR+QjHj4cstrDR8cDr54l+xMzv8AUEsDBBQAAAgIAACwn+sMrc/DbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRSWoqJhVlaioVRSopBsrGRka5BUmqqaaqxsUWSoXmakYWpUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACwn+uXbvIyawIAAB8FAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACwn+sMrc/DbQAAAHgAAAAJACQAAAAAAAAAAAAAALgCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAcAMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -422,22 +420,85 @@ MonoBehaviour:
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
   showGraphs: 1
---- !u!114 &61281289
+--- !u!1 &160052261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 160052262}
+  - component: {fileID: 160052263}
+  - component: {fileID: 160052264}
+  m_Layer: 0
+  m_Name: inimigos fase 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &160052262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160052261}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.334056, y: 0.6587076, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1023649145}
+  - {fileID: 690277887}
+  - {fileID: 485128102}
+  - {fileID: 481640000}
+  m_Father: {fileID: 61281286}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &160052263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61281285}
+  m_GameObject: {fileID: 160052261}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec7ee921bb5a86b47a12f4c35b2b7315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   listini: []
+  ativador: 1
   cena: 
   saida: {fileID: 481639999}
   escolhas: 0
+--- !u!61 &160052264
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160052261}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.69, y: -1.27}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12.59, y: 7.16}
+  m_EdgeRadius: 0
 --- !u!1 &219209219
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +576,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: inimigo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
@@ -610,10 +676,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481639999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.74, y: -1.2, z: 0}
+  m_LocalPosition: {x: 3.4059439, y: -1.8587074, z: -406.40173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 61281286}
+  m_Father: {fileID: 160052262}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &481640001
@@ -647,12 +713,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 61281286}
+    m_TransformParent: {fileID: 160052262}
     m_Modifications:
     - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_Name
       value: inimigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
@@ -662,17 +733,17 @@ PrefabInstance:
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.5
+      value: 1.1659441
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 0.241292
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 406.40173
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
@@ -795,7 +866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499258301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.084032, y: 1.2206206, z: -10}
+  m_LocalPosition: {x: -5.0798855, y: 1.220555, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3264,6 +3335,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: inimigo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_RootOrder
@@ -3336,9 +3412,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 682504695}
-  - component: {fileID: 682504694}
   - component: {fileID: 682504697}
   - component: {fileID: 682504696}
+  - component: {fileID: 682504694}
   m_Layer: 0
   m_Name: Inimigos fase 3
   m_TagString: Untagged
@@ -3346,61 +3422,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &682504694
-MonoBehaviour:
+--- !u!61 &682504694
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682504693}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  data:
-    dataString: UEsDBBQAAAgIAACwn+tRBKpRawIAAA4FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty4jAQ/BVK5yVlDJiwt12HkD3kUSFbufgirDFWIUsuPQIkxb/vSLaxw54QPT2jnp6RvwiXpobcKr3WnD0qBuTniPgz+THqgw9wpDslN/wTOs47Z7b0JBo4r9RyhfjEpxlVgdU8/yV3wpMjBJ3khdLViu0gVcYahAsqDGBIK+uzJUJfI3LEn/HSp5zwFC/86RNPy2h0xmMO0oLuqcnkJklmi3nLj25mSRJHUTydtnnTm3mcJMvbRbwaR4tQw8lc0KoG5hvqS8WztshkFmgSW20Zvq1cCcFNq5PYUx18SGltHHaJBMYp9h3EeX4JfFdaX3eY/FwUBmxriqanO67RvqYq+a0aTytq9o2uDypcsDAoako+/hcdT0K40Kp66G6dRP4GW/J8/0pPOTV2YPkQvvsu28kDFXu6FfBegnxSa62cZBi02vlUZyC+6/9eGktLyPc93ki9Al3du91NuJuv7+Ecej+mglfbZpgNsBEquB3WAjTO5Q8KDktj2hKIehV/DbzR3XC72sA918ZiqO1Senlb5bSnklXwzHfjbKq0hAC3omuQVNjTC5ax1wO8ig2uvYrcU/+O2svbWPc8rlIC3POj6Cr0og6XYZlSHR7BlM/OCi6hF+0DT+hTqqRs9mvoSZe2cbqg+SBt5zj7vlqEzSlM42W+TWbb7ZxF41saTRYziKMJgyVlMQm7xyX2ScVLI7S1B6cm++IS96z7vIzWmtZh15mmhzX/rNTAci4Ltck1gHxuKlyEg8ZL8E2yFeNo0Aas5TLMm3xlRKh8Dyy7FMpCp6uj1TTrq2Sk5h/KeiQjafieZORMzv8AUEsDBBQAAAgIAACwn+u25IKybQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrRSimliqrGRZXKSmUlSkmmKga5FooGhuUmqkYFhSqplYoqRUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACwn+tRBKpRawIAAA4FAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACwn+u25IKybQAAAHgAAAAJACQAAAAAAAAAAAAAALgCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAcAMAAAAA
-    upgradeData: 
-    file_cachedStartup: {fileID: 0}
-    data_cachedStartup: 
-    cacheStartup: 0
-  showNavGraphs: 1
-  showUnwalkableNodes: 1
-  debugMode: 0
-  debugFloor: 0
-  debugRoof: 1
-  manualDebugFloorRoof: 0
-  showSearchTree: 0
-  unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
-  maxNearestNodeDistance: 100
-  scanOnStartup: 1
-  fullGetNearestSearch: 0
-  prioritizeGraphs: 0
-  prioritizeGraphsLimit: 1
-  colorSettings:
-    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
-    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
-    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
-    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
-    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
-    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
-    _AreaColors:
-    - {r: 0, g: 0, b: 0, a: 0}
-  tagNames: []
-  heuristic: 2
-  heuristicScale: 1
-  threadCount: 1
-  maxFrameTime: 1
-  batchGraphUpdates: 0
-  graphUpdateBatchingInterval: 0.2
-  euclideanEmbedding:
-    mode: 0
-    seed: 0
-    pivotPointRoot: {fileID: 0}
-    spreadOutCount: 1
-  showGraphs: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.87, y: -2.68}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.47, y: 8.03}
+  m_EdgeRadius: 0
 --- !u!4 &682504695
 Transform:
   m_ObjectHideFlags: 0
@@ -3408,8 +3455,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682504693}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.1, y: -0.4, z: -1439.9668}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 50.329998, y: 15.400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2030575610}
@@ -3417,8 +3464,8 @@ Transform:
   - {fileID: 1398522441}
   - {fileID: 322344443}
   - {fileID: 678982026}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 61281286}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &682504696
 MonoBehaviour:
@@ -3446,6 +3493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listini: []
+  ativador: 1
   cena: Casa
   saida: {fileID: 0}
   escolhas: 2
@@ -3454,12 +3502,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 61281286}
+    m_TransformParent: {fileID: 160052262}
     m_Modifications:
     - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_Name
       value: inimigo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
@@ -3469,17 +3522,17 @@ PrefabInstance:
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.1681118
+      value: -1.1659441
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.7498798
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 406.40173
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
@@ -14497,6 +14550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: inimigo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_RootOrder
@@ -14569,8 +14627,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 820318271}
-  - component: {fileID: 820318270}
   - component: {fileID: 820318272}
+  - component: {fileID: 820318270}
   m_Layer: 0
   m_Name: Inimigos fase 2
   m_TagString: Untagged
@@ -14578,61 +14636,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &820318270
-MonoBehaviour:
+--- !u!61 &820318270
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820318269}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  data:
-    dataString: UEsDBBQAAAgIAACwn+vkdVReXQIAAAEFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2jAU/RVG65IxhkDornUI6SKPKe1k442wrrAGWfLoESAZ/r1Xso0dukLccx/nHF35kwhlayicNmsj2JNmQL6PSDiTb6MefIQj3Wm1ER/Q5bwJ5sqQRGPOb+qExvgklFldgTOi+KF2MiQnGPRKcG2qFdtBpq2zGOZUWkDIaBeqFYY+R+SIP+NlKDnhKV2E0weelsnojMcClAPTp04XN+lksUznbcE4ndzcJovZbdrWNWVeFZJWNbCgoa9OuzmTWUxTqK7NCEoKLaWwLTXiTnWUntHaehSGCUxQlBr5hPwSxK50oe+w+IVzC671wdDTvTDoWNOV/NSNjRW1+4bXO5UeLsSblk//oeNJhLnR1WM3dZKECa4Uxf43PRXUuoHLw/D9V9peHajc062EtxLUs14b7RVD0BkfSr2F9L7/exGWlVDs+3hD9Sro697tzuzuSoOGc9R+zKSotgG6mTWBjdTR7bgJYPBefiHhuCe2bYHRwOKvhT90N1yoFngQxjqEWpUq0Ntqb0IqWUXPghrvMm0UxHBLugZFpTu9Yht3fYFX2GDsFfJAw9Nph7dY9yKuSmK4z0+SK+hVHy6XZUt9eAJbvngnhYKedACe0adMK9Xs19CTrmzjDafFoGznBfu6WmQGsznn82lyx9lsyul4nkJ6R6dLzqe3W47VcfeEQp1UvjZEW3vw1lTfXOGedV+U0drQOu46M/SwFh+VHlguFNebwgCol6bDhTgYHIJvkq2YQIM24JxQ8b7JZ06kLvbA8kujPCpdHZ2hed8lJ7V41y5EcpLFT0hOzuT8D1BLAwQUAAAICAAAsJ/rZXxpoW0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNVRUEovSizIKAaKGII4pZkpIHa0kkmqiVlampmxgUVaiolxWqKumVGqkUWisWVamrFpUlpyqlIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAsJ/r5HVUXl0CAAABBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAsJ/rZXxpoW0AAAB4AAAACQAkAAAAAAAAAAAAAACqAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGIDAAAAAA==
-    upgradeData: 
-    file_cachedStartup: {fileID: 0}
-    data_cachedStartup: 
-    cacheStartup: 0
-  showNavGraphs: 1
-  showUnwalkableNodes: 1
-  debugMode: 0
-  debugFloor: 0
-  debugRoof: 1
-  manualDebugFloorRoof: 0
-  showSearchTree: 0
-  unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
-  maxNearestNodeDistance: 100
-  scanOnStartup: 1
-  fullGetNearestSearch: 0
-  prioritizeGraphs: 0
-  prioritizeGraphsLimit: 1
-  colorSettings:
-    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
-    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
-    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
-    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
-    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
-    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
-    _AreaColors:
-    - {r: 0, g: 0, b: 0, a: 0}
-  tagNames: []
-  heuristic: 2
-  heuristicScale: 1
-  threadCount: 1
-  maxFrameTime: 1
-  batchGraphUpdates: 0
-  graphUpdateBatchingInterval: 0.2
-  euclideanEmbedding:
-    mode: 0
-    seed: 0
-    pivotPointRoot: {fileID: 0}
-    spreadOutCount: 1
-  showGraphs: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.24, y: -0.08}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.57, y: 9.58}
+  m_EdgeRadius: 0
 --- !u!4 &820318271
 Transform:
   m_ObjectHideFlags: 0
@@ -14640,8 +14669,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820318269}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.71, y: -21.71, z: -1427.1017}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.939999, y: -5.909999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 989030878}
@@ -14650,8 +14679,8 @@ Transform:
   - {fileID: 1302534112}
   - {fileID: 782395618}
   - {fileID: 1487370486}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 61281286}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &820318272
 MonoBehaviour:
@@ -14666,6 +14695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listini: []
+  ativador: 1
   cena: 
   saida: {fileID: 1487370485}
   escolhas: 0
@@ -14775,6 +14805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: inimigo
       objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_RootOrder
@@ -14843,12 +14878,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 61281286}
+    m_TransformParent: {fileID: 160052262}
     m_Modifications:
     - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_Name
       value: inimigo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
@@ -14858,17 +14898,17 @@ PrefabInstance:
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.57016
+      value: -0.763896
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4324627
+      value: -2.0911713
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 406.40173
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
@@ -14952,6 +14992,80 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!1001 &1071375614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5649004239222968965, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_Name
+      value: Musica local
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 205.25934
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 193.81158
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -146.16081
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968966, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5649004239222968967, guid: 7d01c39c5f44ab743a76ef65fc811603,
+        type: 3}
+      propertyPath: Audiolocal
+      value: 
+      objectReference: {fileID: 8300000, guid: ebfe3d05001d1c8439470e770adc185d, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d01c39c5f44ab743a76ef65fc811603, type: 3}
 --- !u!1 &1088112800
 GameObject:
   m_ObjectHideFlags: 0
@@ -15025,6 +15139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: inimigo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
@@ -15101,6 +15220,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: inimigo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_RootOrder
@@ -15175,6 +15299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: inimigo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
@@ -15603,6 +15732,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: inimigo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_RootOrder
@@ -15712,6 +15846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: inimigo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}
       propertyPath: m_RootOrder
@@ -15782,6 +15921,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2130193782025440627, guid: f827aac770795c245b40cb2ddb80a0ea,
+        type: 3}
+      propertyPath: vida
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5549845479512037424, guid: f827aac770795c245b40cb2ddb80a0ea,
         type: 3}
       propertyPath: m_RootOrder
@@ -57132,6 +57276,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: inimigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976197505849455291, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3857496917421665371, guid: 974e52a9c372c5d4eb6860c384708efa,
         type: 3}

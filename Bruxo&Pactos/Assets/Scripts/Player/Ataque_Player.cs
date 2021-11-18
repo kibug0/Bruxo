@@ -11,14 +11,14 @@ public class Ataque_Player : MonoBehaviour
 
     public Collider2D colisão;
 
-    public Status status;
+    public StatsPlayer status;
     
     
    void Update()
    {
        if(status == null)
        {
-           status = GameObject.FindWithTag("GameController").GetComponent<Status>();
+           status = GetComponentInParent<StatsPlayer>();
 
        }
        
@@ -33,12 +33,15 @@ public class Ataque_Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.GetComponent<InimigoStats>() is  InimigoStats Ini)
+        if(col.gameObject.tag == "Inimigo")
         {
-            col.GetComponent<InimigoStats>().tiraVida(status.dano);
-
+            if(col.GetComponent<InimigoStats>() is  InimigoStats Ini)
+            {
+                col.GetComponent<InimigoStats>().tiraVida(status.Dano);
+            }
 
         }
+        
         
         
     }

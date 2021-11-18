@@ -38,11 +38,6 @@ public class Inimigoataque : MonoBehaviour
 
             ataque.SetTrigger("Atk");
             StartCoroutine("ataquetempo");
-            
-
-            
-            
-
 
         }
 

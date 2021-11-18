@@ -16,8 +16,7 @@ public class AudioManager : MonoBehaviour
 
     //Musicas das fases
     public AudioClip Fase1Audio;
-    public AudioClip Fase2Audio;
-    public AudioClip Fase3Audio;
+
 
     //GameManager para pegar o dinheiro
     public GameManager GM;
@@ -30,17 +29,7 @@ public class AudioManager : MonoBehaviour
 
 
 
-    //Volume
-    public void Start()
-    {
-      
-      
- 
-      faseM.clip = Fase1Audio;
-      SetFaseMusic ();
-
-
-    }
+    
 
     public void Update(){
       //GM.Volume;
@@ -50,7 +39,7 @@ public class AudioManager : MonoBehaviour
         if(SliderMenu == null)
         {
           SliderMenu = GameObject.FindGameObjectWithTag("Volume");
-          SliderMenu.GetComponent<Slider>().minValue = -80;
+          SliderMenu.GetComponent<Slider>().minValue = -35;
           SliderMenu.GetComponent<Slider>().maxValue = 0;
           SliderMenu.GetComponent<Slider>().value = GM.Volume;
           SliderMenu.GetComponent<Slider>().onValueChanged.AddListener(delegate {SetVolume(SliderMenu.GetComponent<Slider>().value);});
@@ -79,54 +68,15 @@ public class AudioManager : MonoBehaviour
 
     
 
-    public void SetFaseMusic ()
+    public void SetFaseMusic(AudioClip Audio)
     {
-      if(GM.FASE == "Cidade_1")
-      {
-
-        faseM.clip = Fase1Audio; 
+        faseM.clip = Audio; 
         if(!faseM.isPlaying)
         {
 
           faseM.Play();
 
-        }
-        
-
-
-      }
-
-
-      if(GM.FASE == "Plano_Astral")
-      {
-
-        faseM.clip = Fase2Audio; 
-        if(!faseM.isPlaying)
-        {
-
-          faseM.Play();
-
-        }
-        
-
-
-      }
-
-      if(GM.FASE == "Cidade_2")
-      {
-
-        faseM.clip = Fase3Audio; 
-        if(!faseM.isPlaying)
-        {
-
-          faseM.Play();
-
-        }
-        
-        
-
-      }
-      
+        } 
 
     }
 

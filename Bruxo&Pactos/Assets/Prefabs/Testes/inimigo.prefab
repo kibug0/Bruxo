@@ -299,6 +299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8742298058053553181}
   - component: {fileID: 4563677468253608137}
+  - component: {fileID: 1521792196635634703}
   - component: {fileID: 2749513116777805554}
   m_Layer: 0
   m_Name: arma
@@ -371,6 +372,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1521792196635634703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448083179081881881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27554cdccb9431f48a2220bdca8c78e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 750037936026258282}
 --- !u!58 &2749513116777805554
 CircleCollider2D:
   m_ObjectHideFlags: 0
