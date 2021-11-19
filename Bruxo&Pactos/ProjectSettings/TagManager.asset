@@ -16,6 +16,9 @@ TagManager:
   - arma
   - Status
   - Audiocontroller
+  - Vida
+  - Pergunta
+  - IniButton
   layers:
   - Default
   - TransparentFX

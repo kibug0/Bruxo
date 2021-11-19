@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 5549845479512037425}
   - component: {fileID: 5549845479512037430}
   - component: {fileID: 5549845479512037431}
+  - component: {fileID: 7455159901891286203}
   - component: {fileID: 5549845479512037427}
   m_Layer: 0
   m_Name: Player
@@ -182,6 +183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26d625c983937d4fb5f9b047cb7dc60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vida: 0
+  Dano: 0
+  status: {fileID: 0}
+  SliderVida: {fileID: 0}
 --- !u!114 &5549845479512037425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,16 +249,27 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.15790343, y: 0.3417939}
-      - {x: 0.09249878, y: 0.4418521}
-      - {x: -0.0625, y: 0.453125}
-      - {x: -0.1484375, y: 0.3671875}
-      - {x: -0.171875, y: 0.2890625}
-      - {x: -0.1796875, y: 0.2109375}
+    - - {x: 0.17834973, y: 0.1986362}
+      - {x: -0.18720937, y: 0.20214534}
       - {x: -0.17477965, y: -0.2740498}
-      - {x: -0.18962169, y: -0.47135544}
+      - {x: -0.16627264, y: -0.44466436}
       - {x: 0.1328125, y: -0.453125}
       - {x: 0.1796875, y: -0.43700415}
+--- !u!114 &7455159901891286203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5549845479512037428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 418b5c7c7443a1a40a535707308fd1d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 8549887078551489646, guid: 9ed99e029f35ae94ca1af51ed4a58e5b, type: 3}
+  Canvas: {fileID: 0}
+  Tag: 
 --- !u!114 &5549845479512037427
 MonoBehaviour:
   m_ObjectHideFlags: 0

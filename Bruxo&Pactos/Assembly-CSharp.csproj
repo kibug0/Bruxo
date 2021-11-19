@@ -54,8 +54,10 @@
      <Compile Include="Assets\Scripts\Menu_Systema\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\Chama_Menu.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\Colocamusica.cs" />
+     <Compile Include="Assets\Scripts\Menu_Systema\Faselocal.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\GameManager.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\Menu.cs" />
+     <Compile Include="Assets\Scripts\Menu_Systema\PegaSpawner.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\ResolucitonManager.cs" />
      <Compile Include="Assets\Scripts\NPC\Chamado.cs" />
      <Compile Include="Assets\Scripts\NPC\Criatura.cs" />

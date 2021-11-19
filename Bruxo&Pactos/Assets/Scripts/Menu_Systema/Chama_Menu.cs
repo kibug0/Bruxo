@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Chama_Menu : MonoBehaviour
 {
 
@@ -25,9 +26,9 @@ public class Chama_Menu : MonoBehaviour
 
         }
         
-        if(Tag == null)
+        if(Tag == "")
         {
-            Tag = "Menu";
+            Tag = "Options";
         }
         
 
@@ -43,23 +44,51 @@ public class Chama_Menu : MonoBehaviour
             Canvas = GameObject.FindWithTag("Canvas");
 
         }
-        if(tag == "Menu")
+        
+
+        if(Tag == "Options")
         {
-            if (Input.GetKeyDown("escape")) 
-            {
-            ColocaMenu();
-            }
+            
+            
+                if (Input.GetKeyDown("escape")) 
+                {
+                    ColocaMenu();
+                }
         }
+
         if(GameObject.FindGameObjectWithTag("FechaButton"))
         {
-            GameObject.FindGameObjectWithTag("FechaButton").GetComponent<Button>().onClick.AddListener(delegate() {ColocaMenu();});
-            Debug.Log("FechaButton");
+            if(Tag == "Options")
+            {
+                GameObject.FindGameObjectWithTag("FechaButton").GetComponent<Button>().onClick.AddListener(delegate {Application.Quit();});
+
+            }
+            else
+            {
+                GameObject.FindGameObjectWithTag("FechaButton").GetComponent<Button>().onClick.AddListener(delegate {ColocaMenu();});
+
+            }
+            
+            
+
+        }
+
+        if(GameObject.FindGameObjectWithTag("IniButton"))
+        {
+            
+            if(GameObject.FindWithTag("GameController"))
+            {
+                
+                GameObject.FindGameObjectWithTag("IniButton").GetComponent<Button>().onClick.AddListener(delegate {GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().proximacena("Inicio"); });
+
+            }
 
         }
         
 
         
     }
+    
 
     public void ColocaMenu()
     {

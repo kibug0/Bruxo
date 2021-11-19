@@ -3283,6 +3283,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2130193782025440627, guid: f827aac770795c245b40cb2ddb80a0ea,
+        type: 3}
+      propertyPath: Dano
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130193782025440627, guid: f827aac770795c245b40cb2ddb80a0ea,
+        type: 3}
+      propertyPath: vida
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5549845479512037424, guid: f827aac770795c245b40cb2ddb80a0ea,
         type: 3}
       propertyPath: m_RootOrder

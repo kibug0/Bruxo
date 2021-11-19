@@ -347,9 +347,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1142742897}
-        m_MethodName: LoadMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1142742896}
+        m_MethodName: Scenechange
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -537,6 +537,7 @@ GameObject:
   - component: {fileID: 585287974}
   - component: {fileID: 585287973}
   - component: {fileID: 585287972}
+  - component: {fileID: 585287975}
   m_Layer: 5
   m_Name: voltar jogo
   m_TagString: Untagged
@@ -606,18 +607,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 585287973}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1142742896}
-        m_MethodName: Scenechange
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &585287973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,6 +645,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585287970}
   m_CullTransparentMesh: 0
+--- !u!114 &585287975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585287970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9b82d708a25344daef43d306ef7001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Voltar: {fileID: 585287972}
+  SP: {fileID: 1142742896}
+  fase: 
 --- !u!1 &770289055
 GameObject:
   m_ObjectHideFlags: 0
