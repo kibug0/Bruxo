@@ -4,21 +4,47 @@ using UnityEngine;
 
 public class Armas_Dano : MonoBehaviour
 {
-    public int Dano;
-    public bool conturdente;
-    public bool Cortante;
-    public bool Distancia;
-    public bool Longas;
+    [System.Serializable]
+        public class Arma
+        {
+            public string Name;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+            public int Dano;
+            
 
-    // Update is called once per frame
-    void Update()
+            public SpriteRenderer Arimagem;
+
+            public Transform Tamanho;
+
+            
+        }
+
+        public Arma item;
+    
+    
+    
+
+    void OnTriggerEnter2D(Collider2D col)
     {
-        
+        if(GameObject.FindWithTag("inventario"))
+        {
+            for(int i = 0; i <GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>().Caixa.Count; i++)
+            {
+                if(GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>().Caixa[i]  == item)
+                {
+                    return;
+
+                }
+            }
+            if(Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.E))
+            {
+                GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>().Caixa.Add(item);
+
+            }
+            
+
+
+        }
+
     }
 }

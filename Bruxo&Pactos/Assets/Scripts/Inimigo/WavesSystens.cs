@@ -4,80 +4,81 @@ using UnityEngine;
 
 public class WavesSystens : MonoBehaviour
 {
-    #region classe de outros scripts
-    public Fasecameracontroler Fcc;
+
+    #region Classes externas
+        public tranca Trnc;
 
     #endregion
 
     #region Variavies
 
     //Enum criado para os estados possiveis da wave spawning = spawnando; wating = esperando; couunting = contando;
-    public enum SpawnState{desligado, Spawning, wating, couunting, finalizado}
+        public enum SpawnState{desligado, Spawning, wating, couunting, finalizado}
     
     
 
     //Classe que eu criei para cada inimigo que pode aparecer numa wave
-    [System.Serializable]
-    public class inimigo
-    {
-        //Nome do inimigo
-        public string Name;
-        //O transform do inimigo para chamar ele
-        public Transform enemy;
+        [System.Serializable]
+        public class inimigo
+        {
+            //Nome do inimigo
+            public string Name;
+            //O transform do inimigo para chamar ele
+            public Transform enemy;
 
-        //o nivel do inimigo por enquanto não esta sendo usado
-        public int nivelEnemy;
-    }
+            //o nivel do inimigo por enquanto não esta sendo usado
+            public int nivelEnemy;
+        }
 
-    //Essa é um tipo de classe que eu criei para definir as ondas de inimigos tanto com nome = Name; 
-    [System.Serializable]
-    public class Wave
-    {
-        //nome da wave
-        public string Name;
+        //Essa é um tipo de classe que eu criei para definir as ondas de inimigos tanto com nome = Name; 
+        [System.Serializable]
+        public class Wave
+        {
+            //nome da wave
+            public string Name;
+            
+            
+            //tipos de inimigos = Inimigo; eu usei a classe inimigo que eu criei logo a cima e fiz um array dela para poder escolher mais de um tipo de inimigo
+            public inimigo[] Inimigo;
+
+            //quantidade de inimigos na onda = count;
+            public int count;
+
+            //tempo de drope de um inimigo a outros
+            public float rate;
+
+            //Frequencia de inimigos que aparecem
+            public int[] Poucafrec;
+            public int[] Mediafrec;
+            public int[] Muitafrec;
+
+            
+        }
         
-        
-        //tipos de inimigos = Inimigo; eu usei a classe inimigo que eu criei logo a cima e fiz um array dela para poder escolher mais de um tipo de inimigo
-        public inimigo[] Inimigo;
+        //Essa é uma variavel para ver os numeros que não estão publicos para a unity
+        public int test;
 
-        //quantidade de inimigos na onda = count;
-        public int count;
+        //Um array que criei usando a classe que eu criei logo a cima para pode definir como cada onda ira se comportar
+        public Wave[] wave;
 
-        //tempo de drope de um inimigo a outros
-        public float rate;
-
-        //Frequencia de inimigos que aparecem
-        public int[] Poucafrec;
-        public int[] Mediafrec;
-        public int[] Muitafrec;
+        //uma função int que serve para chamar a onda certa seguindo ate a ultima
+        private int nextwave;
 
         
-    }
-    
-    //Essa é uma variavel para ver os numeros que não estão publicos para a unity
-    public int test;
+        //Locais onde os inimigos podem ser chamados
+        public Transform[] spawnPoints;
 
-    //Um array que criei usando a classe que eu criei logo a cima para pode definir como cada onda ira se comportar
-    public Wave[] wave;
+        //O tempo de duração entre as waves ela serve para reiniciar o wavecountdown para esse valor não ser perdido
+        public float timebetweenwaves = 5f;
 
-    //uma função int que serve para chamar a onda certa seguindo ate a ultima
-    private int nextwave;
+        //Aki ele rescebe o tempo entre as waves para começar a contar alterando o numero como se fosse em segundos
+        public float wavecountdown;
 
-    
-    //Locais onde os inimigos podem ser chamados
-    public Transform[] spawnPoints;
+        //Ele serve para procurar a cada 1 segundo se os inimigos ainda estão vivos
+        private float searchCountdown = 1f;
 
-    //O tempo de duração entre as waves ela serve para reiniciar o wavecountdown para esse valor não ser perdido
-    public float timebetweenwaves = 5f;
-
-    //Aki ele rescebe o tempo entre as waves para começar a contar alterando o numero como se fosse em segundos
-    public float wavecountdown;
-
-    //Ele serve para procurar a cada 1 segundo se os inimigos ainda estão vivos
-    private float searchCountdown = 1f;
-
-    // aki eu ativo o enum para ir alterando ela pelos os paremetros feitos a cima no enum
-    public SpawnState state = SpawnState.desligado;
+        // aki eu ativo o enum para ir alterando ela pelos os paremetros feitos a cima no enum
+        public SpawnState state = SpawnState.desligado;
 
     
     #endregion
@@ -160,9 +161,10 @@ public class WavesSystens : MonoBehaviour
 
         if(nextwave + 1 > wave.Length - 1)
         {
-            Fcc.TodosSeForam();
-            //nextwave = 0;
-            state = SpawnState.finalizado;
+            
+            
+            state = SpawnState.desligado;
+            Trnc.abre();
             Debug.Log("completou todas as waves. Looping...");
 
         }
@@ -237,87 +239,87 @@ public class WavesSystens : MonoBehaviour
             //SpawnEnemys(_wave.enemy);
 
             #region Rand 1 de maior frequancia
-            if(rand == 1)
-            {
-            //Maior frequancia
-             //if(i<=_wave.count*0.5)
-             if(maior<=_wave.count*0.5)
-             {
-                 //Pega os que aparecem com mais frequencia
-                SpawnEnemys(_wave.Inimigo[_wave.Muitafrec[Random.Range(0,_wave.Muitafrec.Length)]].enemy);
-                maior ++;
+                if(rand == 1)
+                {
+                //Maior frequancia
+                //if(i<=_wave.count*0.5)
+                if(maior<=_wave.count*0.5)
+                {
+                    //Pega os que aparecem com mais frequencia
+                    SpawnEnemys(_wave.Inimigo[_wave.Muitafrec[Random.Range(0,_wave.Muitafrec.Length)]].enemy);
+                    maior ++;
 
-             }
-             else if(media<=_wave.count*0.3)
-             {
-                rand = 2;
-             }
-             else if(menor>=_wave.count*0.2)
-             {
-                rand = 3;
-             }
-             
-             
+                }
+                else if(media<=_wave.count*0.3)
+                {
+                    rand = 2;
+                }
+                else if(menor>=_wave.count*0.2)
+                {
+                    rand = 3;
+                }
+                
+                
 
-            }
+                }
             #endregion
 
 
             #region Rand 2 de media frequancia
-            if(rand == 2)
-            {
-            //Media frequancia
-            //if(i>=_wave.count*0.3 && i<=_wave.count*0.2)
-            if(media<=_wave.count*0.3)
-            {
-                //pega os com frequancia media
-                SpawnEnemys(_wave.Inimigo[_wave.Mediafrec[Random.Range(0,_wave.Mediafrec.Length)]].enemy);
-                media++;
+                if(rand == 2)
+                {
+                //Media frequancia
+                //if(i>=_wave.count*0.3 && i<=_wave.count*0.2)
+                if(media<=_wave.count*0.3)
+                {
+                    //pega os com frequancia media
+                    SpawnEnemys(_wave.Inimigo[_wave.Mediafrec[Random.Range(0,_wave.Mediafrec.Length)]].enemy);
+                    media++;
 
-            }
+                }
 
-            else if(maior<=_wave.count*0.5)
-             {
-                 //Pega os que aparecem com mais frequencia
-                SpawnEnemys(_wave.Inimigo[_wave.Muitafrec[Random.Range(0,_wave.Muitafrec.Length)]].enemy);
-                
-                maior ++;
-             }
-             else if(menor<=_wave.count*0.2)
-             {
-                rand = 3;
-             }
-            }
+                else if(maior<=_wave.count*0.5)
+                {
+                    //Pega os que aparecem com mais frequencia
+                    SpawnEnemys(_wave.Inimigo[_wave.Muitafrec[Random.Range(0,_wave.Muitafrec.Length)]].enemy);
+                    
+                    maior ++;
+                }
+                else if(menor<=_wave.count*0.2)
+                {
+                    rand = 3;
+                }
+                }
             #endregion
 
 
             #region Rand 3 de menor frequancia
-            if(rand == 3)
-            {
-            //Menor frequancia
-            //if(i>=_wave.count*0.2)
-            if(menor<=_wave.count*0.2)
-            {
-                //Pega os com pouca frequancia
-                SpawnEnemys(_wave.Inimigo[_wave.Poucafrec[Random.Range(0,_wave.Poucafrec.Length)]].enemy);
-                menor++;
+                if(rand == 3)
+                {
+                //Menor frequancia
+                //if(i>=_wave.count*0.2)
+                if(menor<=_wave.count*0.2)
+                {
+                    //Pega os com pouca frequancia
+                    SpawnEnemys(_wave.Inimigo[_wave.Poucafrec[Random.Range(0,_wave.Poucafrec.Length)]].enemy);
+                    menor++;
 
-            }
-            else if(maior<=_wave.count*0.5)
-             {
-                 //Pega os que aparecem com mais frequencia
-                 SpawnEnemys(_wave.Inimigo[_wave.Muitafrec[Random.Range(0,_wave.Muitafrec.Length)]].enemy);
-                
-                maior ++;
-             }
-             else if(media<=_wave.count*0.3)
-             {
-                //pega os com frequancia media
-                SpawnEnemys(_wave.Inimigo[_wave.Mediafrec[Random.Range(0,_wave.Muitafrec.Length)]].enemy);
-                
-                media++;
-             }
-            }
+                }
+                else if(maior<=_wave.count*0.5)
+                {
+                    //Pega os que aparecem com mais frequencia
+                    SpawnEnemys(_wave.Inimigo[_wave.Muitafrec[Random.Range(0,_wave.Muitafrec.Length)]].enemy);
+                    
+                    maior ++;
+                }
+                else if(media<=_wave.count*0.3)
+                {
+                    //pega os com frequancia media
+                    SpawnEnemys(_wave.Inimigo[_wave.Mediafrec[Random.Range(0,_wave.Muitafrec.Length)]].enemy);
+                    
+                    media++;
+                }
+                }
             #endregion
             
             //SpawnEnemys(_wave.Inimigo[0].enemy);

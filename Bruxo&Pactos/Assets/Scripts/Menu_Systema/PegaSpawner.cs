@@ -11,6 +11,8 @@ public class PegaSpawner : MonoBehaviour
 
     public string fase;
 
+    public GameObject Lobby;
+
     void Start()
     {
         
@@ -18,6 +20,11 @@ public class PegaSpawner : MonoBehaviour
         {
             fase = GameObject.FindWithTag("GameController").GetComponent<GameManager>().FASE;
             Voltar.onClick.AddListener(delegate{SP.Scenechange(fase); });
+
+            if(GameObject.FindWithTag("GameController").GetComponent<GameManager>().Nivelplayer>0)
+            {
+                Lobby.SetActive(true);
+            }
 
         }
 

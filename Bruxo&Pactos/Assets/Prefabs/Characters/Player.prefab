@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6078541068340961588}
-  - component: {fileID: 5940064482380110243}
   - component: {fileID: 5835511718998661670}
   - component: {fileID: 547480893744855821}
+  - component: {fileID: 6701190344486199210}
+  - component: {fileID: 7582368534366697570}
   m_Layer: 0
   m_Name: atacavel
   m_TagString: Untagged
@@ -26,29 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2178400107004401157}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.006000042, y: -0.024, z: 0}
-  m_LocalScale: {x: 0.2656746, y: 0.27773643, z: 1}
+  m_LocalScale: {x: 0.2656746, y: 0.2777364, z: 1}
   m_Children: []
   m_Father: {fileID: 5549845480222509021}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5940064482380110243
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2178400107004401157}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00000011920929}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!212 &5835511718998661670
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ecd355d1b72a4374ea12b1e1cdcfb1a3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.56078434, g: 0.3372549, b: 0.23529413, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -112,8 +97,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ataque: {fileID: 4410034366075612666}
-  "colis\xE3o": {fileID: 5940064482380110243}
+  "colis\xE3o": {fileID: 0}
   status: {fileID: 0}
+  arma: {fileID: 6701190344486199210}
+--- !u!114 &6701190344486199210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2178400107004401157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aea3bd51b5d221419142760785748ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caixa:
+  - Name: punhos
+    Dano: 0
+    Arimagem: {fileID: 5835511718998661670}
+    Tamanho: {fileID: 6078541068340961588}
+  DanoArmat: 0
+  i: 0
+--- !u!60 &7582368534366697570
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2178400107004401157}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.5, y: -0.5}
+      - {x: -0.5, y: 0.5}
+      - {x: 0.5, y: 0.5}
+      - {x: 0.5, y: -0.5}
 --- !u!1 &5549845479512037428
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,7 +163,6 @@ GameObject:
   - component: {fileID: 5549845479512037430}
   - component: {fileID: 5549845479512037431}
   - component: {fileID: 7455159901891286203}
-  - component: {fileID: 5549845479512037427}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -202,6 +235,7 @@ MonoBehaviour:
   MoveSpeed: 100
   Rb: {fileID: 5549845479512037430}
   Andar: {fileID: 4410034366075612666}
+  movement: {x: 0, y: 0}
   CameTroca: {fileID: 0}
 --- !u!50 &5549845479512037430
 Rigidbody2D:
@@ -270,18 +304,6 @@ MonoBehaviour:
   Menu: {fileID: 8549887078551489646, guid: 9ed99e029f35ae94ca1af51ed4a58e5b, type: 3}
   Canvas: {fileID: 0}
   Tag: 
---- !u!114 &5549845479512037427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5549845479512037428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d99fcc865e65d0c40883b392172ab718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5549845480222509008
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ TagManager:
   - Vida
   - Pergunta
   - IniButton
+  - inventario
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Obstaculos
   - 
   - 
   - 

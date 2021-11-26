@@ -10,6 +10,8 @@ public class InimicoCount : MonoBehaviour
 
     public bool ativador; 
 
+    public bool plusN; 
+
     public string cena;
 
     private SceneP Cenap;
@@ -40,6 +42,12 @@ public class InimicoCount : MonoBehaviour
         
         if(listini.Count<=0)
         {
+            if(plusN)
+            {
+                GameObject.FindWithTag("GameController").GetComponent<GameManager>().Nivelplayer += 1;
+
+            }
+
             if(escolhas == tipo.saida)
             {
                 saida.SetActive(true);

@@ -12,6 +12,10 @@ public class Ataque_Player : MonoBehaviour
     public Collider2D colisão;
 
     public StatsPlayer status;
+
+    public Caixa_de_Armas arma;
+
+    
     
     
    void Update()
@@ -25,7 +29,7 @@ public class Ataque_Player : MonoBehaviour
 
        if(Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Q))
        {
-           ataque.SetTrigger("Atacar");
+           ataque.SetTrigger(arma.Caixa[arma.i].Name);
        }
    }
     
@@ -37,7 +41,7 @@ public class Ataque_Player : MonoBehaviour
         {
             if(col.GetComponent<InimigoStats>() is  InimigoStats Ini)
             {
-                col.GetComponent<InimigoStats>().tiraVida(status.Dano);
+                col.GetComponent<InimigoStats>().tiraVida(status.Dano+arma.DanoArmat);
             }
 
         }

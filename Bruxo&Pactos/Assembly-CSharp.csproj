@@ -59,16 +59,19 @@
      <Compile Include="Assets\Scripts\Menu_Systema\Menu.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\PegaSpawner.cs" />
      <Compile Include="Assets\Scripts\Menu_Systema\ResolucitonManager.cs" />
+     <Compile Include="Assets\Scripts\Menu_Systema\novelText.cs" />
      <Compile Include="Assets\Scripts\NPC\Chamado.cs" />
      <Compile Include="Assets\Scripts\NPC\Criatura.cs" />
      <Compile Include="Assets\Scripts\NPC\Pacto.cs" />
      <Compile Include="Assets\Scripts\Player\Armas_Dano.cs" />
      <Compile Include="Assets\Scripts\Player\Ataque_Player.cs" />
+     <Compile Include="Assets\Scripts\Player\Caixa_de_Armas.cs" />
      <Compile Include="Assets\Scripts\Player\Movimento.cs" />
      <Compile Include="Assets\Scripts\Player\StatsPlayer.cs" />
      <Compile Include="Assets\Scripts\SceneP.cs" />
      <Compile Include="Assets\Scripts\Status.cs" />
      <Compile Include="Assets\Scripts\testscript.cs" />
+     <Compile Include="Assets\Scripts\tranca.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

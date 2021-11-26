@@ -17,7 +17,7 @@ public class Movimento : MonoBehaviour
 
 
     //Vetor para mover o rigidbody do player
-    Vector2 movement;
+    public Vector2 movement;
 
 
     //O script de trocar a camera
@@ -36,13 +36,11 @@ public class Movimento : MonoBehaviour
 
         
 
+        
+
         if(Andar != null)
         {
-            if(movement.x == movement.y)
-            {
-                movement.y = 0;
-
-            }
+            
             Andar.SetFloat("Horizontal", movement.x);
 
             Andar.SetFloat("Vertical", movement.y);
