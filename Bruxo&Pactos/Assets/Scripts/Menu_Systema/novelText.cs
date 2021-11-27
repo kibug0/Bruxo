@@ -10,24 +10,30 @@ public class novelText : MonoBehaviour
 
     public GameObject caixa;
 
-    private int I = 0;
+    public int I = 0;
+
+    public bool arma;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        caixa.GetComponentInChildren<Text>().text = textos[I];
-        I++;
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if(GameObject.FindWithTag("PainelN") && caixa == null)
+        {
+            caixa = GameObject.FindWithTag("PainelN");
+            caixa.GetComponentInChildren<Text>().text = textos[I];
+            I++;
+            
+        }
+        
+
+        if (Input.GetKeyDown(KeyCode.Return) || arma && caixa !=null)
         {
             if(I < textos.Length)
             {
-                Debug.Log(I);
+                
                 caixa.GetComponentInChildren<Text>().text = textos[I];
                 I++;
 
@@ -37,7 +43,13 @@ public class novelText : MonoBehaviour
                 Destroy(caixa);
 
             }
+            arma = false;
             
+            
+        }
+        if(I >= textos.Length)
+        {
+            I--;
         }
         
     }

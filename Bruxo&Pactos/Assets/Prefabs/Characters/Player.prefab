@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7582368534366697570}
   m_Layer: 0
   m_Name: atacavel
-  m_TagString: Untagged
+  m_TagString: inventario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,8 +115,6 @@ MonoBehaviour:
   Caixa:
   - Name: punhos
     Dano: 0
-    Arimagem: {fileID: 5835511718998661670}
-    Tamanho: {fileID: 6078541068340961588}
   DanoArmat: 0
   i: 0
 --- !u!60 &7582368534366697570
@@ -284,9 +282,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.17834973, y: 0.1986362}
-      - {x: -0.18720937, y: 0.20214534}
-      - {x: -0.17477965, y: -0.2740498}
-      - {x: -0.16627264, y: -0.44466436}
+      - {x: -0.072571516, y: 0.19068164}
+      - {x: -0.040170908, y: -0.46759194}
       - {x: 0.1328125, y: -0.453125}
       - {x: 0.1796875, y: -0.43700415}
 --- !u!114 &7455159901891286203

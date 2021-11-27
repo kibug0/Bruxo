@@ -12,22 +12,53 @@ public class Armas_Dano : MonoBehaviour
             public int Dano;
             
 
-            public SpriteRenderer Arimagem;
-
-            public Transform Tamanho;
 
             
         }
 
+        
+
+        public GameObject PainelN;
+
+        public GameObject Canvas;
+
+
         public Arma item;
+
+        private bool coli;
+
+    void Start()
+    {
+        if(GameObject.FindWithTag("Canvas"))
+        {
+            Canvas = GameObject.FindWithTag("Canvas");
+
+        }
+    }
     
     
-    
+    void Update()
+    { 
+        if(coli)
+        {
+            if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Z))
+            {
+                
+                GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>().Caixa.Add(item);
+                Destroy(gameObject);
+
+            }
+
+            
+        }
+
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(GameObject.FindWithTag("inventario"))
+        if(GameObject.FindWithTag("inventario") && col.CompareTag("Player"))
         {
+            
             for(int i = 0; i <GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>().Caixa.Count; i++)
             {
                 if(GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>().Caixa[i]  == item)
@@ -36,15 +67,26 @@ public class Armas_Dano : MonoBehaviour
 
                 }
             }
-            if(Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.E))
-            {
-                GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>().Caixa.Add(item);
-
-            }
+            
+            
+            coli = true;
+            Instantiate(PainelN, Canvas.GetComponent<Transform> ());
             
 
 
         }
 
+    }
+
+    private void OnTriggerExit2D(Collider2D player)
+    {
+        if(player.CompareTag("Player"))
+        {
+            
+            coli = false;
+            Destroy( GameObject.FindWithTag("PainelN"));
+            
+        }
+        
     }
 }

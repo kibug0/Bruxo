@@ -363,7 +363,7 @@ Transform:
   - {fileID: 820318271}
   - {fileID: 682504695}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &61281287
 MonoBehaviour:
@@ -608,32 +608,47 @@ PrefabInstance:
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 234.3
+      value: 234.29999
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 24.4
+      value: 24.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2148
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2148
+      objectReference: {fileID: 0}
+    - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2148
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
@@ -673,12 +688,12 @@ PrefabInstance:
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -374.62
+      value: 187
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 351.1
+      value: -57
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
@@ -889,7 +904,7 @@ Transform:
   - {fileID: 1963811343}
   - {fileID: 631365530}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &631365529
 GameObject:
@@ -14947,7 +14962,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1126526968
 PrefabInstance:
@@ -15344,7 +15359,7 @@ Transform:
   m_Children:
   - {fileID: 852342496}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1548817373
 GameObject:
@@ -15358,8 +15373,9 @@ GameObject:
   - component: {fileID: 1548817374}
   - component: {fileID: 1548817377}
   - component: {fileID: 1548817376}
+  - component: {fileID: 1548817378}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Cano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15441,11 +15457,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbdebacfd1f2cd843bec8efca0a4ad16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PainelN: {fileID: 660099772067381614, guid: 6137a261a8d7cee4ca5caece08badd61, type: 3}
+  Canvas: {fileID: 2086195661}
   item:
     Name: Cano
     Dano: 10
-    Arimagem: {fileID: 1548817374}
-    Tamanho: {fileID: 1548817375}
 --- !u!58 &1548817377
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15461,7 +15477,25 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.5
+--- !u!114 &1548817378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548817373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b3f6550f1df464b92e1e9faca0faf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textos:
+  - Um cano? Eu acho que vale mais a pena usar ele do que os meus punhos. bem o velho
+    disse que era E e X para interagir e eu acho que C para trocar de arma
+  caixa: {fileID: 0}
+  I: 0
+  arma: 1
 --- !u!213 &1614086965
 Sprite:
   m_ObjectHideFlags: 0
@@ -15893,10 +15927,15 @@ PrefabInstance:
       propertyPath: vida
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 2178400107004401157, guid: f827aac770795c245b40cb2ddb80a0ea,
+        type: 3}
+      propertyPath: m_TagString
+      value: inventario
+      objectReference: {fileID: 0}
     - target: {fileID: 5549845479512037424, guid: f827aac770795c245b40cb2ddb80a0ea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5549845479512037424, guid: f827aac770795c245b40cb2ddb80a0ea,
         type: 3}
@@ -57381,10 +57420,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -57403,7 +57442,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -57425,7 +57464,7 @@ RectTransform:
   m_Children:
   - {fileID: 1892807593}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

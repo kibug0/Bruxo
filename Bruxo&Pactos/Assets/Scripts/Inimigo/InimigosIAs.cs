@@ -101,15 +101,18 @@ public class InimigosIAs : MonoBehaviour
 
         if(Andar != null)
         {
-            Debug.Log(direcao);
             
-           
-            Andar.SetFloat("horizontal", direcao.x);
-
             
-
             
-            Andar.SetFloat("vertical", direcao.y);
+           if(Rg.position.x > target.position.x)
+           {
+               Andar.SetFloat("horizontal", -1);
+           }
+           else if(Rg.position.x < target.position.x)
+           {
+               Andar.SetFloat("horizontal", 1);
+           }
+            
 
             
             

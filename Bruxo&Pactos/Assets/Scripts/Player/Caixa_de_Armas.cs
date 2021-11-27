@@ -14,17 +14,20 @@ public class Caixa_de_Armas : MonoBehaviour
     {
         
     }
-/*
+
     // Update is called once per frame
     void Update()
     {
         DanoArmat = Caixa[i].Dano;
 
-        SpriteRenderer.sprite = Caixa[i].Arimagem.sprite;
-
-        SpriteRenderer.Color = Caixa[i].Arimagem.Color;
-
-        Transform.Scale = Caixa[i].Tamanho.Scale;
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            i++;
+            if(Caixa.Count<i)
+            {
+                i = 0;
+            }
+        }
         
-    }*/
+    }
 }
