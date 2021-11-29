@@ -2383,12 +2383,12 @@ PrefabInstance:
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 167.4
+      value: 216
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -64.20001
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
@@ -2475,7 +2475,7 @@ PrefabInstance:
     - target: {fileID: 660099772067381613, guid: 6137a261a8d7cee4ca5caece08badd61,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 660099772067381613, guid: 6137a261a8d7cee4ca5caece08badd61,
         type: 3}
@@ -2988,6 +2988,8 @@ MonoBehaviour:
   - "Velho:\n     OQUE?! VOCE NAO SABE BATER EM RATOS MUTANTES?!"
   - "Velho:\n     \xC9 SO USAR O Q OU Z COMO QUAL QUER SER HUMANO NORMAL!!!!"
   caixa: {fileID: 1069474653}
+  I: 0
+  arma: 0
 --- !u!1 &1487954532
 GameObject:
   m_ObjectHideFlags: 0

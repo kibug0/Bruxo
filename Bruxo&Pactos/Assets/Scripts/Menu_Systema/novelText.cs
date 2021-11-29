@@ -15,7 +15,28 @@ public class novelText : MonoBehaviour
     public bool arma;
 
     // Start is called before the first frame update
-    
+    void Start()
+    {
+        if(caixa != null)
+        {
+            
+            caixa.GetComponentInChildren<Text>().text = textos[I];
+            I++;
+            
+            
+        }
+
+        if(GameObject.FindWithTag("PainelN") && caixa == null)
+        {
+            caixa = GameObject.FindWithTag("PainelN");
+            caixa.GetComponentInChildren<Text>().text = textos[I];
+            I++;
+            
+        }
+
+        
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,7 +50,7 @@ public class novelText : MonoBehaviour
         }
         
 
-        if (Input.GetKeyDown(KeyCode.Return) || arma && caixa !=null)
+        if (Input.GetKeyDown(KeyCode.Return) && caixa !=null)
         {
             if(I < textos.Length)
             {
@@ -38,16 +59,16 @@ public class novelText : MonoBehaviour
                 I++;
 
             }
-            else
+            else if (I == textos.Length)
             {
                 Destroy(caixa);
 
             }
-            arma = false;
+            
             
             
         }
-        if(I >= textos.Length)
+        else if(I >= textos.Length && arma)
         {
             I--;
         }

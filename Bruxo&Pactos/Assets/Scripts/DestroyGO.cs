@@ -7,6 +7,9 @@ public class DestroyGO : MonoBehaviour
     public void Destroi(GameObject objeto)
     {
         Destroy(objeto);
+        Time.timeScale = 1f;
 
     }
+
+    
 }

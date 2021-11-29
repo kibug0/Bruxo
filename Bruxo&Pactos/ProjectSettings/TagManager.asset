@@ -21,6 +21,7 @@ TagManager:
   - IniButton
   - inventario
   - PainelN
+  - MButton
   layers:
   - Default
   - TransparentFX

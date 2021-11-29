@@ -688,12 +688,12 @@ PrefabInstance:
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 187
+      value: 265
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -57
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
@@ -730,6 +730,11 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5660731379825580498, guid: 2623cc269be928542b11adb7446fe80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000024318695
+      objectReference: {fileID: 0}
     - target: {fileID: 5660731379878465659, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -739,6 +744,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476952339822541753, guid: 2623cc269be928542b11adb7446fe80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.17500305
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476952339822541753, guid: 2623cc269be928542b11adb7446fe80c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0000019073486
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2623cc269be928542b11adb7446fe80c, type: 3}
@@ -976,7 +991,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 30
+  m_SortingOrder: 32
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -6312,15 +6327,6 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 18, y: -18, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 23
-      m_TileSpriteIndex: 23
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
   - first: {x: 19, y: -18, z: 0}
     second:
       serializedVersion: 2
@@ -6713,15 +6719,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 18
       m_TileSpriteIndex: 18
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: 18, y: -17, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 23
-      m_TileSpriteIndex: 23
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -14298,7 +14295,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 86abe274dd9e2934e9ba280e13174612, type: 2}
   - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: 8a089960eb4804746adb5360761fdcc6, type: 2}
-  - m_RefCount: 12
+  - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: f510e03cf218d16439c357d4420a7843, type: 2}
   - m_RefCount: 359
     m_Data: {fileID: 11400000, guid: d35a9556307527c4b860ba8bfa0eab1b, type: 2}
@@ -14377,7 +14374,7 @@ Tilemap:
   - m_RefCount: 13
     m_Data: {fileID: 7592835010900206710, guid: aa4f750eb5789a54798b4bf44e4fdcea,
       type: 3}
-  - m_RefCount: 12
+  - m_RefCount: 10
     m_Data: {fileID: 3658579292437798706, guid: aa4f750eb5789a54798b4bf44e4fdcea,
       type: 3}
   - m_RefCount: 359
@@ -14396,7 +14393,7 @@ Tilemap:
     m_Data: {fileID: -4666984582906844308, guid: aa4f750eb5789a54798b4bf44e4fdcea,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1188
+  - m_RefCount: 1186
     m_Data:
       e00: 1
       e01: 0
@@ -14415,7 +14412,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1186
+  - m_RefCount: 1184
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 1
     m_Data: {r: 0.8130386, g: 0.41678196, b: 0.54403234, a: 1}
@@ -15371,9 +15368,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1548817375}
   - component: {fileID: 1548817374}
-  - component: {fileID: 1548817377}
   - component: {fileID: 1548817376}
   - component: {fileID: 1548817378}
+  - component: {fileID: 1548817377}
   m_Layer: 0
   m_Name: Cano
   m_TagString: Untagged
@@ -15462,8 +15459,8 @@ MonoBehaviour:
   item:
     Name: Cano
     Dano: 10
---- !u!58 &1548817377
-CircleCollider2D:
+--- !u!60 &1548817377
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15476,8 +15473,23 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.05205536, y: -7.087948}
+      - {x: -0.5640354, y: -3.2449777}
+      - {x: -0.6280689, y: 2.695983}
+      - {x: -0.05205536, y: 6.35595}
+      - {x: 0.615263, y: 3.976974}
+      - {x: 0.57684135, y: -3.0619795}
 --- !u!114 &1548817378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15917,6 +15929,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 547480893744855821, guid: f827aac770795c245b40cb2ddb80a0ea,
+        type: 3}
+      propertyPath: arma
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Caixa.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Caixa.Array.data[0].Name
+      value: punhos
+      objectReference: {fileID: 0}
     - target: {fileID: 2130193782025440627, guid: f827aac770795c245b40cb2ddb80a0ea,
         type: 3}
       propertyPath: Dano
@@ -15925,12 +15950,12 @@ PrefabInstance:
     - target: {fileID: 2130193782025440627, guid: f827aac770795c245b40cb2ddb80a0ea,
         type: 3}
       propertyPath: vida
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2178400107004401157, guid: f827aac770795c245b40cb2ddb80a0ea,
         type: 3}
       propertyPath: m_TagString
-      value: inventario
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5549845479512037424, guid: f827aac770795c245b40cb2ddb80a0ea,
         type: 3}

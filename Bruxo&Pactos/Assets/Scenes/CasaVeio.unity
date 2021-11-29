@@ -5103,6 +5103,8 @@ MonoBehaviour:
   - "Velho:\n     E para interragir com os objetos com (!) use a tecla E ou a tecla
     X.\n"
   caixa: {fileID: 862160309}
+  I: 0
+  arma: 0
 --- !u!4 &1771031354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5549845479512037424, guid: f827aac770795c245b40cb2ddb80a0ea,
@@ -5674,12 +5676,12 @@ PrefabInstance:
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 187.79999
+      value: 217.4
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -73.599976
+      value: -16.6
       objectReference: {fileID: 0}
     - target: {fileID: 5660731378907492460, guid: 2623cc269be928542b11adb7446fe80c,
         type: 3}

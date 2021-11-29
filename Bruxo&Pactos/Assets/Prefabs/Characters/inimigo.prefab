@@ -57,8 +57,8 @@ MonoBehaviour:
   Wave: 0
   "Dire\xE7\xE3o": {x: 0, y: 0}
   nextWayPointDistanci: 1
-  EnimieGfx: {fileID: 1107478762241203285}
-  Andar: {fileID: 0}
+  EnimieGfx: {fileID: 3857496917421665371}
+  Andar: {fileID: 1560816543765564793}
   CameTroca: {fileID: 0}
 --- !u!114 &8663763213536676936
 MonoBehaviour:
@@ -136,7 +136,7 @@ Animator:
   m_GameObject: {fileID: 2976197505849455291}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c776e4d806c478e41aec29a4d4a30b02, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3ed0c925a7251ed40b91606566d6faef, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -339,7 +339,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6448083179081881881}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -370,8 +370,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 30
-  m_Sprite: {fileID: 21300000, guid: ecd355d1b72a4374ea12b1e1cdcfb1a3, type: 3}
+  m_SortingOrder: 31
+  m_Sprite: {fileID: -8741371232266233098, guid: c2a8a84faaed3354688086f45a3dacbc,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -402,7 +403,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6448083179081881881}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -481,12 +482,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 30
-  m_Sprite: {fileID: 21300000, guid: 26ddaf98289392b4496b834b2e505b14, type: 3}
+  m_Sprite: {fileID: -7155676815870876259, guid: 71745f24cdba68b44a1a852cad5c4ef7,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.6956522}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -553,4 +555,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ataque: {fileID: 1560816543765564793}
-  andar: {fileID: 0}
+  andar: {fileID: 7661901484549613469}

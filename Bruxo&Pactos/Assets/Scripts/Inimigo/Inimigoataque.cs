@@ -11,6 +11,8 @@ public class Inimigoataque : MonoBehaviour
 
     private float speedOrigin;
 
+    private bool dentro;
+
     void Start()
     {
         if(ataque==null)
@@ -28,16 +30,38 @@ public class Inimigoataque : MonoBehaviour
         
     }
 
+    void Update()
+    {
+        if(dentro)
+        {
+            ataque.SetTrigger("Atk");
+            StartCoroutine("ataquetempo");
+            
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
+        
         
         
         if(col.GetComponent<StatsPlayer>() is  StatsPlayer player)
         {
             speedOrigin = andar.speed;
+            dentro = true;
+            
 
-            ataque.SetTrigger("Atk");
-            StartCoroutine("ataquetempo");
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if(col.GetComponent<StatsPlayer>() is  StatsPlayer player)
+        {
+            
+            dentro = false;
+            
 
         }
 

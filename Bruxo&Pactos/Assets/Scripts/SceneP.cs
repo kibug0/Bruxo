@@ -16,7 +16,9 @@ public class SceneP : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Z))
             {
+                
                 Scenechange(Scena);
+                
                 
 
             }
@@ -32,10 +34,12 @@ public class SceneP : MonoBehaviour
 
 
     }
+
     
 
     public void Scenechange(string cena)
     {
+        Resume();
         SceneManager.LoadScene(cena);
         
 
@@ -78,5 +82,14 @@ public class SceneP : MonoBehaviour
         }
         
     }
+
+    public void Resume()
+    {
+       
+        Time.timeScale = 1f;
+        
+        
+    }
+    
 
 }

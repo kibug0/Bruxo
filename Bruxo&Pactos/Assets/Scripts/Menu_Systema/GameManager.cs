@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     public void proximacena(string cena)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(cena);
 
     }

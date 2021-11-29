@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7661901484549613469, guid: 974e52a9c372c5d4eb6860c384708efa,
+        type: 3}
+      propertyPath: nextWayPointDistanci
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 974e52a9c372c5d4eb6860c384708efa, type: 3}
 --- !u!1001 &194099696
@@ -532,6 +537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: inimigo_boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469661164108093109, guid: 5ea8dc0c3adc6ba4ca31c1f3bf278f12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ea8dc0c3adc6ba4ca31c1f3bf278f12, type: 3}

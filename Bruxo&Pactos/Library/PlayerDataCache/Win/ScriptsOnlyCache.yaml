@@ -56,8 +56,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnimatorStateTransitionInspector
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -133,8 +136,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12444}
     - Class: 114
       Script: {instanceID: 12562}
-    - Class: 114
-      Script: {instanceID: 12670}
     - Class: 114
       Script: {instanceID: 12850}
     - Class: 114
@@ -251,11 +252,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12562}
     - Class: 114
-      Script: {instanceID: 12670}
-    - Class: 114
       Script: {instanceID: 12850}
     - Class: 114
       Script: {instanceID: 12918}
+    - Class: 114
+      Script: {instanceID: 12940}
     - Class: 114
       Script: {instanceID: 13108}
     - Class: 114
@@ -405,6 +406,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12444}
     - Class: 114
+      Script: {instanceID: 12670}
+    - Class: 114
       Script: {instanceID: 12850}
     - Class: 114
       Script: {instanceID: 13260}
@@ -496,11 +499,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 12670}
-    - Class: 114
       Script: {instanceID: 12738}
     - Class: 114
       Script: {instanceID: 12850}
+    - Class: 114
+      Script: {instanceID: 12940}
     - Class: 114
       Script: {instanceID: 13450}
     - Class: 114
@@ -607,13 +610,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12562}
     - Class: 114
-      Script: {instanceID: 12670}
-    - Class: 114
       Script: {instanceID: 12738}
     - Class: 114
       Script: {instanceID: 12850}
     - Class: 114
       Script: {instanceID: 12918}
+    - Class: 114
+      Script: {instanceID: 12940}
     - Class: 114
       Script: {instanceID: 13108}
     - Class: 114
@@ -744,13 +747,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12562}
     - Class: 114
-      Script: {instanceID: 12670}
-    - Class: 114
       Script: {instanceID: 12738}
     - Class: 114
       Script: {instanceID: 12850}
     - Class: 114
       Script: {instanceID: 12918}
+    - Class: 114
+      Script: {instanceID: 12940}
     - Class: 114
       Script: {instanceID: 13108}
     - Class: 114
@@ -883,13 +886,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12562}
     - Class: 114
-      Script: {instanceID: 12670}
-    - Class: 114
       Script: {instanceID: 12738}
     - Class: 114
       Script: {instanceID: 12850}
     - Class: 114
       Script: {instanceID: 12918}
+    - Class: 114
+      Script: {instanceID: 12940}
     - Class: 114
       Script: {instanceID: 13108}
     - Class: 114
@@ -1577,7 +1580,7 @@ ScriptsOnlyBuild:
     className: CinemachineTargetGroup
   - hash:
       serializedVersion: 2
-      Hash: 6a9eeee05053a1a4cc94e4ac7b1798e1
+      Hash: c9cca32517995b70bce4d1737e696a43
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movimento
@@ -2161,4 +2164,4 @@ ScriptsOnlyBuild:
   - "Assets/Scenes/Sot\xE3oVeio.unity"
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/astral.unity
-  playerPath: C:/Users/CONSTERRA/Desktop/AstralHag 1.0.8/Bruxo&Pactos.exe
+  playerPath: C:/Users/PEDRO/Desktop/Jogositchio/HagAstral 1.1.0/Bruxo&Pactos.exe

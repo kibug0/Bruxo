@@ -25,6 +25,12 @@ public class Ataque_Player : MonoBehaviour
            status = GetComponentInParent<StatsPlayer>();
 
        }
+
+       if(arma == null)
+       {
+           arma = GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>();
+
+       }
        
 
        if(Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Q))

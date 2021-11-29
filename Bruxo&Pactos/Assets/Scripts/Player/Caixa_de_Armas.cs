@@ -20,14 +20,17 @@ public class Caixa_de_Armas : MonoBehaviour
     {
         DanoArmat = Caixa[i].Dano;
 
-        if(Input.GetKeyDown(KeyCode.C))
+        if(Input.GetKeyDown(KeyCode.C) && Caixa.Count>1)
         {
+            Debug.Log(Caixa.Count);
             i++;
-            if(Caixa.Count<i)
+            if(Caixa.Count<i+1)
             {
                 i = 0;
             }
         }
+
+
         
     }
 }

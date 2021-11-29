@@ -104,11 +104,12 @@ public class InimigosIAs : MonoBehaviour
             
             
             
+            
            if(Rg.position.x > target.position.x)
            {
                Andar.SetFloat("horizontal", -1);
            }
-           else if(Rg.position.x < target.position.x)
+           else
            {
                Andar.SetFloat("horizontal", 1);
            }
@@ -155,6 +156,8 @@ public class InimigosIAs : MonoBehaviour
             EnimieGfx.localScale = new Vector3(1f, 1f, 1f);
             
         }
+
+        Debug.Log(Force);
         
 
         

@@ -73,6 +73,17 @@ public class Chama_Menu : MonoBehaviour
 
         }
 
+        if(GameObject.FindGameObjectWithTag("MButton"))
+        {
+            
+            GameObject.FindGameObjectWithTag("MButton").GetComponent<Button>().onClick.AddListener(delegate {ColocaMenu();});
+
+            
+            
+            
+
+        }
+
         if(GameObject.FindGameObjectWithTag("IniButton"))
         {
             

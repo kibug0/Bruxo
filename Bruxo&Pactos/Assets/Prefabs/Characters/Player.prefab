@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 6078541068340961588}
   - component: {fileID: 5835511718998661670}
   - component: {fileID: 547480893744855821}
-  - component: {fileID: 6701190344486199210}
   - component: {fileID: 7582368534366697570}
   m_Layer: 0
   m_Name: atacavel
-  m_TagString: inventario
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 31
   m_Sprite: {fileID: 21300000, guid: ecd355d1b72a4374ea12b1e1cdcfb1a3, type: 3}
   m_Color: {r: 0.56078434, g: 0.3372549, b: 0.23529413, a: 1}
   m_FlipX: 0
@@ -99,24 +98,7 @@ MonoBehaviour:
   ataque: {fileID: 4410034366075612666}
   "colis\xE3o": {fileID: 0}
   status: {fileID: 0}
-  arma: {fileID: 6701190344486199210}
---- !u!114 &6701190344486199210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2178400107004401157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aea3bd51b5d221419142760785748ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Caixa:
-  - Name: punhos
-    Dano: 0
-  DanoArmat: 0
-  i: 0
+  arma: {fileID: 0}
 --- !u!60 &7582368534366697570
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -214,8 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26d625c983937d4fb5f9b047cb7dc60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 0
-  Dano: 0
+  vida: 10
+  Dano: 5
   status: {fileID: 0}
   SliderVida: {fileID: 0}
 --- !u!114 &5549845479512037425
@@ -234,7 +216,6 @@ MonoBehaviour:
   Rb: {fileID: 5549845479512037430}
   Andar: {fileID: 4410034366075612666}
   movement: {x: 0, y: 0}
-  CameTroca: {fileID: 0}
 --- !u!50 &5549845479512037430
 Rigidbody2D:
   serializedVersion: 4
@@ -281,11 +262,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.17834973, y: 0.1986362}
-      - {x: -0.072571516, y: 0.19068164}
-      - {x: -0.040170908, y: -0.46759194}
-      - {x: 0.1328125, y: -0.453125}
-      - {x: 0.1796875, y: -0.43700415}
+    - - {x: 0.02539587, y: 0.09499839}
+      - {x: -0.1663177, y: 0.10184914}
+      - {x: -0.16845465, y: -0.47746214}
+      - {x: 0.0020637512, y: -0.4764852}
 --- !u!114 &7455159901891286203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,8 +351,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
-  m_Sprite: {fileID: 21300000, guid: ff4640d02a284504db77d76d73e04cfa, type: 3}
+  m_SortingOrder: 32
+  m_Sprite: {fileID: 21300000, guid: 9e466788efa9ef0489425858124e28b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

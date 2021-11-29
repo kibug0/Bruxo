@@ -58,6 +58,7 @@ public class Armas_Dano : MonoBehaviour
     {
         if(GameObject.FindWithTag("inventario") && col.CompareTag("Player"))
         {
+            Instantiate(PainelN, Canvas.GetComponent<Transform> ());
             
             for(int i = 0; i <GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>().Caixa.Count; i++)
             {
@@ -70,7 +71,7 @@ public class Armas_Dano : MonoBehaviour
             
             
             coli = true;
-            Instantiate(PainelN, Canvas.GetComponent<Transform> ());
+            
             
 
 
