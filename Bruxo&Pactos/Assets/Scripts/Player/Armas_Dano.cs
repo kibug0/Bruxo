@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Armas_Dano : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Armas_Dano : MonoBehaviour
             public string Name;
 
             public int Dano;
+
+            public Sprite ImagemArma;
             
 
 

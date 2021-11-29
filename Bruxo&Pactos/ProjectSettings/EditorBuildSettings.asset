@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/astral.unity
     guid: 9575dd4b752bb834085617b96aa2492b
+  - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: d570975dcdbf30f4f94ef4491fb01eaf
   m_configObjects: {}

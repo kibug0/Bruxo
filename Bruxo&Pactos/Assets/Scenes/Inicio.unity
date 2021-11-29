@@ -716,7 +716,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CasaVeio
+          m_StringArgument: CutScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1015272368
@@ -885,6 +885,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1305834740953168505, guid: f62a625795366ef4a900b87fe1e59e6e,
+        type: 3}
+      propertyPath: Caixa.Array.data[0].ImagemArma
+      value: 
+      objectReference: {fileID: -7144852353907119403, guid: eb65259e924402e4c881e14e7b075f6c,
+        type: 3}
     - target: {fileID: 2135468310967748730, guid: f62a625795366ef4a900b87fe1e59e6e,
         type: 3}
       propertyPath: m_TagString

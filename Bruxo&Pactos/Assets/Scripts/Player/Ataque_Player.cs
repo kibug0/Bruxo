@@ -26,10 +26,9 @@ public class Ataque_Player : MonoBehaviour
 
        }
 
-       if(arma == null)
+       if(arma == null && GameObject.FindWithTag("inventario"))
        {
            arma = GameObject.FindWithTag("inventario").GetComponent<Caixa_de_Armas>();
-
        }
        
 
